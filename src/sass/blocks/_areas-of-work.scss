@@ -1,0 +1,26 @@
+.areas-of-work {
+    padding-top: 105px;
+}
+
+.areas-of-work__head {
+    margin-bottom: 50px;
+}
+
+.areas-of-work__head .container *:first-child {
+    margin-top: 0;
+}
+
+.areas-of-work__head .container *:last-child {
+    margin-bottom: 0;
+}
+
+.areas-of-work__head .heading-2 {
+    margin-bottom: 27px;
+}
+
+.areas-of-work__head p {
+    margin: 16px 0;
+    font-size: 20px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    text-transform: uppercase;
+}

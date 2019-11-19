@@ -1,0 +1,66 @@
+/* Pulse custom
+   ========================================================================== */
+.pulse-custom {
+    animation: pulse-custom 1.6s infinite linear;
+    backface-visibility: hidden;
+}
+
+@keyframes pulse-custom {
+    0% {
+        opacity: 1;
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: .9;
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    51% {
+        opacity: 1;
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1.1, 1.1);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: .9;
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1, 1);
+    }
+}
+
+/* Shake custom
+   ========================================================================== */
+@keyframes shake-custom {
+    0% {
+        transform: rotateZ(0);
+    }
+    10% {
+        transform: rotateZ(-30deg);
+    }
+    20% {
+        transform: rotateZ(15deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        transform: rotateZ(7.5deg);
+    }
+    50% {
+        transform: rotate(-6deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(-4.28571deg);
+    }
+    80% {
+        transform: rotate(3.75deg);
+    }
+    90% {
+        transform: rotate(-3.33333deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

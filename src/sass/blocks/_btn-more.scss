@@ -1,0 +1,29 @@
+.btn-more {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 27px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #4e4e4e;
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-left: 25px;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: #85622e;
+        transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+        color: #85622e;
+    }
+}

@@ -1,0 +1,84 @@
+.area-slider-box {
+    @include slider-fix(100%);
+
+    width: calc(50% + 570px);
+    padding-right: 150px;
+    padding-bottom: 75px;
+}
+
+.area-slider-box__arrow {
+
+    &--next {
+        position: absolute;
+        top: 150px;
+        right: -12px;
+        display: block;
+        width: 85px;
+        height: 140px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 26px;
+            left: -31px;
+            display: block;
+            width: 86px;
+            height: 86px;
+            padding: 0;
+            background-color: transparent;
+            border-width: 0 5px 5px 0;
+            border-style: solid;
+            border-color: #85622e;
+            cursor: pointer;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.area-slider-box .slick-dots {
+    @include reset-list;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    transform: translate(calc(-50% + (100vw - var(--scrollbar-width) - 1140px)/4), 0);
+}
+
+.area-slider-box .slick-dots li {
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.area-slider-box .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: #d8d8d8;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.area-slider-box .slick-active button {
+    background-color: #85622e;
+}

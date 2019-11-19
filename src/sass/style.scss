@@ -1,7 +1,16 @@
+/*
+Theme Name: Smart Hands
+Author: Sergey Konovalenko
+*/
+
+
+
 /* ==========================================================================
    FONTS
    ========================================================================== */
 @import "fonts";
+
+
 
 /* ==========================================================================
    SPECIFICATION
@@ -12,6 +21,77 @@
 @import "blocks/visually-hidden";
 @import "blocks/button";
 
+
+
+/* ==========================================================================
+   ANIMATION
+   ========================================================================== */
+@import "animation";
+
+
+
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+
+/* Main header
+   ========================================================================== */
+@import "blocks/main-header";
+
+/* Offer home
+   ========================================================================== */
+@import "blocks/offer-home";
+
+/* Areas of work
+   ========================================================================== */
+@import "blocks/areas-of-work";
+@import "blocks/area-slider-box";
+@import "blocks/slide-area";
+@import "blocks/btn-more";
+
+/* Solvable problems
+   ========================================================================== */
+@import "blocks/solvable-problems";
+
+/* Steps to success
+   ========================================================================== */
+@import "blocks/steps-to-success";
+
+/* Three questions
+   ========================================================================== */
+@import "blocks/three-questions";
+@import "blocks/checkbox-list";
+
+/* Trainer
+   ========================================================================== */
+@import "blocks/trainer";
+@import "blocks/triggers";
+@import "blocks/trainers-list";
+
+/* Progress
+   ========================================================================== */
+@import "blocks/progress";
+
+/* Projects
+   ========================================================================== */
+@import "blocks/projects";
+@import "blocks/project";
+
+/* Instagram
+   ========================================================================== */
+@import "blocks/instagram";
+@import "blocks/gallery-instagram";
+
+/* Reviews
+   ========================================================================== */
+@import "blocks/reviews";
+
+/* Customers
+   ========================================================================== */
+@import "blocks/customers";
+
+/* Main footer
+   ========================================================================== */
+@import "blocks/main-footer";
+@import "blocks/contacts";
+@import "blocks/social";

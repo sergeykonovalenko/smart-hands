@@ -1,0 +1,73 @@
+.offer-home {
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+    padding-bottom: 95px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.offer-home .container:last-child::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -130px;
+    right: 15px;
+    bottom: -95px;
+    width: 525px;
+    background-color: #89817b;
+}
+
+.offer-home__title {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: 90px;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+.offer-home__title span {
+    display: block;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    &:first-child {
+        margin-bottom: 16px;
+        font-size: 80px;
+        line-height: 1.25em;
+        color: #606060;
+    }
+
+    &:last-child {
+        font-size: 32px;
+        color: #2e2e2e;
+    }
+}
+
+.offer-home__img {
+    position: absolute;
+    right: -15px;
+    bottom: -95px;
+    z-index: 3;
+}
+
+.offer-home__info {
+    position: relative;
+    width: calc(100% + 15px);
+    z-index: 2;
+    min-height: 370px;
+    padding: 68px 0 34px 95px;
+    background-color: #efece8;
+    visibility: hidden;
+}
+
+.offer-home__info p {
+    width: 360px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 2.05em;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #4e4e4e;
+}

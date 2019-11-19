@@ -1,9 +1,39 @@
 @font-face {
     font-display: swap;
     font-style: normal;
+    font-weight: 300;
+    font-family: "Montserrat";
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+         url("fonts/Montserrat-Light.woff2") format("woff2"),
+         url("fonts/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
     font-weight: 400;
-    font-family: "Open Sans";
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-         url("../../../fonts/opensans-regular.woff2") format("woff2"),
-         url("../../../fonts/opensans-regular.woff") format("woff");
+    font-family: "Montserrat";
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url("fonts/Montserrat-Regular.woff2") format("woff2"),
+         url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Poiret One";
+    src: local('Poiret One Regular'), local('PoiretOne-Regular'),
+         url("fonts/PoiretOne-Regular.woff2") format("woff2"),
+         url("fonts/PoiretOne-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Minion Pro";
+    src: local('Minion Pro Regular'), local('MinionPro-Regular'),
+         url("fonts/MinionPro-Regular.woff2") format("woff2"),
+         url("fonts/MinionPro-Regular.woff") format("woff");
 }

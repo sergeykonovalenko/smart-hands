@@ -1,0 +1,65 @@
+.progress {
+    padding-top: 105px;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+
+.progress__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.progress__list-box {
+    position: relative;
+    margin-left: 34px;
+    min-height: 335px;
+    padding: 27px 23px 105px 45px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -124px;
+        right: 0;
+        left: -34px;
+        height: calc(100% + 70px);
+        border: 2px solid #85622e;
+        pointer-events: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        background-color: #fff;
+        box-shadow: 0 2px 50px 0 rgba(9, 12, 18, .05);
+    }
+}
+
+.progress__list {
+    @include reset-list;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__item {
+
+}
+
+.progress__quantity {
+    display: block;
+    font-size: 55px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #85622e;
+}
+
+.progress__text {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.4375em;
+    color: #635848;
+}

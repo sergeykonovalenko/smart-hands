@@ -1,0 +1,32 @@
+.customers {
+    padding-top: 65px;
+    padding-bottom: 90px;
+}
+
+.customers__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.customers__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -33px;
+    margin-left: -33px;
+}
+
+.customers__item {
+    margin: 22px 33px;
+}
+
+.customers__img-box {
+
+}
+
+.customers__img {
+
+}

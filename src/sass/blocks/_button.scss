@@ -1,10 +1,63 @@
 .button {
+    position: relative;
     display: inline-block;
     max-width: 100%;
     user-select: none;
+    touch-action: manipulation;
     vertical-align: middle;
+    line-height: 1;
     text-align: center;
     white-space: normal;
     word-wrap: normal;
     cursor: pointer;
+    transition: all .3s ease;
+    transform: perspective(1px);
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        transition: all .3s ease;
+    }
+
+    &--stroke {
+        padding: 14px 43px 22px;
+        font-size: 24px;
+        font-family: "Poiret One", Tahoma, sans-serif;
+        color: #85622e;
+        background-color: transparent;
+        border: 2px solid #85622e;
+
+        &::after {
+            background-color: #85622e;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+
+    &--fill {
+        padding: 20px 34px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #85622e;
+        border: none;
+
+        &::after {
+            background-color: #a47b40;
+        }
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+        width: 100%;
+    }
 }

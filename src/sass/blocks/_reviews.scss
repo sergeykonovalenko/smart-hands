@@ -1,0 +1,67 @@
+.reviews {
+    padding-top: 130px;
+    padding-bottom: 65px;
+    overflow-x: hidden;
+}
+
+.reviews__title {
+    margin-bottom: 60px;
+}
+
+.reviews__list {
+    @include reset-list;
+}
+
+.reviews__item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 36px 70px;
+    box-shadow: 0 2px 50px rgba(9, 12, 18, .05);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.reviews__avatar-box {
+    flex-shrink: 0;
+    margin-right: 95px;
+}
+
+.reviews__avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews__text {
+    flex-grow: 1;
+}
+
+.reviews__text strong {
+    display: block;
+    font-weight: 400;
+    font-size: 41px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+}
+
+.reviews__text em {
+    display: block;
+    margin-bottom: 21px;
+    font-style: normal;
+    font-size: 20px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+}
+
+.reviews__text p {
+    margin: 16px 0;
+}
+
+.reviews__text *:first-child {
+    margin-top: 0;
+}
+
+.reviews__text *:last-child {
+    margin-bottom: 0;
+}

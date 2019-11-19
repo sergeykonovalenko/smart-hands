@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -7,30 +7,759 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <!-- SEO -->
-    <title>GULP PROJECT</title>
-    <meta name="description" content="Описание сайта для поисковиков, рекомендуемый размер от 70 до 140 символов">
-    <meta name="keywords" content="ключевые, слова, через, запятую (рекомендованное количество слов в данном теге — 5-10)">
+    <title>Smart Hands – студия командного коучинга для бизнеса в индустрии красоты.</title>
+    <meta name="description" content="Тренеры с международным управленческим опытом помогут построить сильную команду, чтобы вывести ваш бизнес на новый уровень 👍">
+    <meta name="keywords" content="коучинг, бизнес коуч, командный коучинг, коучинг в индустрии красоты, салон красоты">
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <!-- OG -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Название страницы, максимум 70 символов">
-    <meta property="og:description" content="Описание, до 200 символов">
-    <meta property="og:image" content="http://www.site-name.com/img/og/poster-1200x630.png">
-    <meta property="og:url" content="Ссылка на текущую страницу (http://www.site-name.com/current-page)">
-    <meta property="og:site_name" content="GULP PROJECT">
+    <meta property="og:title" content="Smart Hands – студия командного коучинга для бизнеса в индустрии красоты.">
+    <meta property="og:description" content="Тренеры с международным управленческим опытом помогут построить сильную команду, чтобы вывести ваш бизнес на новый уровень 👍">
+    <meta property="og:image" content="http://smarthands.sergeykonovalenko.com.ua/img/og/poster.png">
+    <meta property="og:url" content="http://smarthands.sergeykonovalenko.com.ua">
+    <meta property="og:site_name" content="Smart Hands">
+    <!-- Modernizr -->
+    <script src="js/modernizr-custom.js"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <header class="main-header main-header--home">
+       <div class="container">
+           <nav class="main-header__nav main-header__nav--home">
+               <ul>
+                   <li><a href="#">Программы</a></li>
+                   <li><a href="#">Кейсы</a></li>
+                   <li class="scrollto"><a href="#js-reviews">Отзывы</a></li>
+                   <li><a href="#">Контакты</a></li>
+               </ul>
+           </nav>
+       </div>
+    </header><!-- .main-header -->
+
+    <section class="offer-home">
+        <div class="container">
+            <h1 class="offer-home__title zoomIn wow">
+                <span>Smart Hands</span>
+                <span>Студия командного коучинга</span>
+            </h1>
+            <picture>
+                <source srcset="img/base/offer-home@1x.webp 1x, img/base/offer-home@2x.webp 2x" type="image/webp">
+                <img class="offer-home__img" src="img/base/offer-home@1x.png" srcset="img/base/offer-home@2x.png 2x" width="584" height="810" alt="">
+            </picture>
+            <div class="offer-home__info slideInRight wow">
+                <p>Обучение для салонов красоты, медицинских центров, отелей<br> и фитнес клубов</p>
+            </div>
+        </div>
+    </section><!-- / .offer-home -->
+
+    <section class="areas-of-work">
+        <div class="areas-of-work__head fadeInLeft wow">
+            <div class="container">
+                <strong class="heading-2">Направления<br> работы</strong>
+                <p>Обучение для салонов красоты, медицинских центров, отелей и  фитнес клубов</p>
+            </div>
+        </div>
+
+        <div class="area-slider-box fadeInUp wow">
+            <div class="slide-area">
+                <div class="slide-area__box">
+                    <picture>
+                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="slide-area__text">
+                        <strong class="heading-2 pulse">Тренинги</strong>
+                        <strong class="heading-3">Освоение и обработка инстументов</strong>
+                        <p>
+                            Салон не приносит желаемой прибыли, финансовые показатели не устраивают.
+                            На тренинге мы разбираем причины и даем инструменты выхода на желаемые показатели.
+                            Отрабатываем реальные кейсы салонного бизнеса.
+                        </p>
+                        <a class="slide-area__more btn-more" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div><!-- / .slide-area -->
+            <div class="slide-area">
+                <div class="slide-area__box">
+                    <picture>
+                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="slide-area__text">
+                        <strong class="heading-2">Коучинг</strong>
+                        <strong class="heading-3">Повышение вовлеченности сотрудников в работу</strong>
+                        <p>
+                            Успешный салон – это результат работы его команды, поэтому так важно создать
+                            эффективную рабочую среду. Командный коучинг помогает сплотить команду,
+                            замотивировать сотрудников на результат, раскрыть их личные качества и разрешить
+                            существующие конфликты.
+                        </p>
+                        <a class="slide-area__more btn-more" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div><!-- / .slide-area -->
+            <div class="slide-area">
+                <div class="slide-area__box">
+                    <picture>
+                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="slide-area__text">
+                        <strong class="heading-2">Диагностика</strong>
+                        <strong class="heading-3">Выявление сильных сторон и зон развития</strong>
+                        <p>
+                            Экспертная оценка работы сотрудников для выявления сильных сторон и зон
+                            развития бизнеса. Она позволит подобрать программу, соответствующую
+                            потребностям именно вашего бизнеса.
+                        </p>
+                        <a class="slide-area__more btn-more" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div><!-- / .slide-area -->
+        </div><!-- / .area-slider-box -->
+    </section><!-- / .areas-of-work -->
+
+    <section class="solvable-problems">
+        <div class="container">
+            <strong class="solvable-problems__title heading-2 fadeInLeft wow">Какие проблемы для бизнеса<br> мы решаем</strong>
+            <picture>
+                <source srcset="img/base/solvable-problems@1x.webp 1x, img/base/solvable-problems@2x.webp 2x" type="image/webp">
+                <img class="solvable-problems__img slideInRight wow" src="img/base/solvable-problems@1x.jpg" srcset="img/base/solvable-problems@2x.jpg 2x" alt="">
+            </picture>
+            <ul class="solvable-problems__list">
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.0s">Плохая дисциплина<br> и конфликты в коллективе</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.2s">Сплоченная<br> команда настроена<br> на результат</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.4s">Низкая<br> вовлеченность сотрудников</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.6s">Сотрудники<br> заряжены на продажи</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.8s">Неудовлетворенность клиентов сервисом</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="1s">95% клиентов возвращаются к вам снова</li>
+            </ul>
+        </div>
+    </section><!-- / .solvable-problems -->
+
+    <section class="steps-to-success">
+        <div class="container">
+            <strong class="steps-to-success__title heading-2 fadeInLeft wow">4 шага к вашему успеху</strong>
+            <ol class="steps-to-success__list">
+                <li class="steps-to-success__item fadeInLeft wow" data-wow-delay="0.4s">
+                    <span class="steps-to-success__number">1</span>
+                    <div class="steps-to-success__text">
+                        <strong>Диагностика</strong>
+                        <p>Выявление сильных сторон и зон развития</p>
+                        <p>Индивидуальная программа роста</p>
+                    </div>
+                </li>
+                <li class="steps-to-success__item fadeInLeft wow" data-wow-delay="0.8s">
+                    <span class="steps-to-success__number">2</span>
+                    <div class="steps-to-success__text">
+                        <strong>Вовлечение</strong>
+                        <p>Новая парадигма поведения в команде</p>
+                    </div>
+                </li>
+                <li class="steps-to-success__item fadeInLeft wow" data-wow-delay="1.2s">
+                    <span class="steps-to-success__number">3</span>
+                    <div class="steps-to-success__text">
+                        <strong>Обучение</strong>
+                        <p>Освоение и отработка инструментов</p>
+                    </div>
+                </li>
+                <li class="steps-to-success__item fadeInLeft wow" data-wow-delay="1.6s">
+                    <span class="steps-to-success__number">4</span>
+                    <div class="steps-to-success__text">
+                        <strong>Внедрение</strong>
+                        <p>Трансформация знаний в навыки</p>
+                        <p>Практика</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section><!-- / .steps-to-success -->
+
+    <section class="three-questions">
+        <div class="container">
+            <div class="three-questions__head">
+                <div class="three-questions__title-box fadeInLeft wow">
+                    <strong class="heading-2">Ответьте на три вопроса</strong>
+                    <strong class="heading-3">И мы подберем для вас подходящую программу</strong>
+                </div>
+                <picture>
+                    <source srcset="img/base/three-questions@1x.webp 1x, img/base/three-questions@2x.webp 2x" type="image/webp">
+                    <img class="three-questions__img fadeInDown wow" src="img/base/three-questions@1x.png" srcset="img/base/three-questions@2x.png 2x" width="671" alt="">
+                </picture>
+            </div>
+            <form class="three-questions-form" action="#">
+                <ol class="three-questions-form__list">
+                    <li class="three-questions-form__item">
+                        <p class="three-questions-form__title"><span>1</span> Какой вид программы вас интересует?</p>
+                        <ul class="three-questions-form__checkbox-list checkbox-list">
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="three-questions-form-individual" type="checkbox" name="individual">
+                                <label class="checkbox-list__label" for="three-questions-form-individual">Индивидуальная</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="three-questions-form-team" type="checkbox" name="team">
+                                <label class="checkbox-list__label" for="three-questions-form-team">Командная</label>
+                            </li>
+                        </ul><!-- / .checkbox-list -->
+                    </li>
+                    <li class="three-questions-form__item">
+                        <p class="three-questions-form__title"><span>2</span> Какой формат работы вам более удобен?</p>
+                        <ul class="three-questions-form__checkbox-list checkbox-list">
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="type-of-work-offline" type="checkbox" name="type-of-work-offline">
+                                <label class="checkbox-list__label" for="type-of-work-offline">Личная работа в режиме офлайн</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="type-of-work-online" type="checkbox" name="type-of-work-online">
+                                <label class="checkbox-list__label" for="type-of-work-online">Удаленная работа в режиме онлайн</label>
+                            </li>
+                        </ul><!-- / .checkbox-list -->
+                    </li>
+                    <li class="three-questions-form__item">
+                        <p class="three-questions-form__title"><span>3</span> Какова основная цель нашей совместной работы?</p>
+                        <ul class="three-questions-form__checkbox-list checkbox-list">
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="sales-boost" type="checkbox" name="sales-boost">
+                                <label class="checkbox-list__label" for="sales-boost">Повышение продаж</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="team-transformation" type="checkbox" name="team-transformation">
+                                <label class="checkbox-list__label" for="team-transformation">Трансформация команды</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="efficient-work-environment" type="checkbox" name="efficient-work-environment">
+                                <label class="checkbox-list__label" for="efficient-work-environment">Создание эффективной рабочей среды</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="service-level-improvement" type="checkbox" name="service-level-improvement">
+                                <label class="checkbox-list__label" for="service-level-improvement">Повышение уровня сервиса</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="achieving-new-results" type="checkbox" name="achieving-new-results">
+                                <label class="checkbox-list__label" for="achieving-new-results">Достижение новых результатов</label>
+                            </li>
+                            <li class="checkbox-list__item">
+                                <input class="checkbox-list__field visually-hidden" id="increase-customer-flow" type="checkbox" name="increase-customer-flow">
+                                <label class="checkbox-list__label" for="increase-customer-flow">Увеличение потока клиентов</label>
+                            </li>
+                        </ul><!-- / .checkbox-list -->
+                    </li>
+                </ol>
+                <button class="three-questions-form__button button button--stroke">получить реккомендации</button>
+            </form><!-- / .three-questions-form -->
+        </div>
+    </section><!-- / .three-questions -->
+
+    <section class="trainer">
+        <div class="container">
+            <strong class="trainer__title heading-2 fadeInLeft wow">Тренеры проекта<br> наш опыт</strong>
+            <div class="trainer__triggers triggers">
+                <p class="triggers__title heading-3">Smart hands - это</p>
+                <ul class="triggers__list">
+                    <li class="triggers__item">Международный опыт</li>
+                    <li class="triggers__item">Драйвовый тандем тренеров</li>
+                    <li class="triggers__item">Двойной эффект для команды</li>
+                </ul>
+            </div><!-- / .triggers -->
+
+            <ul class="trainer__trainers-list trainers-list">
+                <li class="trainers-list__item">
+                    <div class="trainers-list__text slideInLeft wow">
+                        <h2>Алексей<br> Заякин</h2>
+                        <p>
+                            Сертифицированный бизнес-коуч Erickson International<br>
+                            Автор 6 программ по продажам, сервису и командному коучингу
+                            Владелец и директор действующего бизнеса
+                        </p>
+                    </div>
+                    <picture class="trainers-list__img-box slideInRight wow">
+                        <source srcset="img/base/Aleksej-Zajakin@1x.webp 1x, img/base/Aleksej-Zajakin@2x.webp 2x" type="image/webp">
+                        <img class="trainers-list__img"
+                             src="img/base/Aleksej-Zajakin@1x.jpg"
+                             srcset="img/base/Aleksej-Zajakin@2x.jpg 2x"
+                             width="517"
+                             height="390"
+                             alt="Алексей Заякин">
+                    </picture>
+                </li>
+                <li class="trainers-list__item">
+                    <div class="trainers-list__text slideInRight wow">
+                        <h2>Александра<br> Гребень</h2>
+                        <p>
+                            Официальный тренер академии L'Oreal, Lancome<br>
+                            Стажировалась В Нью-Йорке, Париже, Сеуле<br>
+                            Член клуба «Orator Club»
+                        </p>
+                    </div>
+                    <picture class="trainers-list__img-box slideInLeft wow">
+                        <source srcset="img/base/Aleksandra-Greben'@1x.webp 1x, img/base/Aleksandra-Greben'@2x.webp 2x" type="image/webp">
+                        <img class="trainers-list__img"
+                             src="img/base/Aleksandra-Greben'@1x.jpg"
+                             srcset="img/base/Aleksandra-Greben'@2x.jpg 2x"
+                             width="517"
+                             height="390"
+                             alt="Александра Гребень">
+                    </picture>
+                </li>
+            </ul><!-- / .trainers-list -->
+        </div>
+    </section><!-- / .trainer -->
+
+    <section class="progress">
+        <div class="container">
+            <strong class="progress__title heading-2 fadeInUp wow">Достижения</strong>
+            <div class="progress__list-box">
+                <ul class="progress__list">
+                    <li class="progress__item fadeInLeft wow" data-wow-delay="0.0s">
+                        <span class="progress__quantity">18</span>
+                        <p class="progress__text">Городов<br> России</p>
+                    </li>
+                    <li class="progress__item fadeInLeft wow" data-wow-delay="0.4s">
+                        <span class="progress__quantity">20</span>
+                        <p class="progress__text">Лет<br> управленческого<br> опыта</p>
+                    </li>
+                    <li class="progress__item fadeInLeft wow" data-wow-delay="0.8s">
+                        <span class="progress__quantity">70</span>
+                        <p class="progress__text">Обучающих<br> тренингов для<br> мировых брендов</p>
+                    </li>
+                    <li class="progress__item fadeInLeft wow" data-wow-delay="1.2s">
+                        <span class="progress__quantity">1000+</span>
+                        <p class="progress__text">Человек под<br> управлением в 5<br> городах</p>
+                    </li>
+                    <li class="progress__item fadeInLeft wow" data-wow-delay="1.6s">
+                        <span class="progress__quantity">2000+</span>
+                        <p class="progress__text">Професионалов<br> теперь влюблены в<br> свое дело</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- / .progress -->
+
+    <section class="projects">
+        <div class="container">
+            <strong class="projects__title heading-2 fadeInLeft wow">Клиенты<br> и проекты</strong>
+            <ul class="projects__list">
+                <li class="projects__item project">
+                    <a class="project__head" href="#">
+                        <picture class="project__img-box">
+                            <source srcset="img/base/project-1@1x.webp 1x, img/base/project-1@2x.webp 2x" type="image/webp">
+                            <img class="project__img"
+                                 src="img/base/project-1@1x.jpg"
+                                 srcset="img/base/project-1@2x.jpg 2x"
+                                 width="540"
+                                 height="430"
+                                 alt="">
+                        </picture>
+                        <picture class="project__logo-box">
+                            <source srcset="img/base/project-logo-1@1x.webp 1x, img/base/project-logo-1@2x.webp 2x" type="image/webp">
+                            <img class="project__logo" src="img/base/project-logo-1@1x.png" srcset="img/base/project-logo-1@2x.png 2x" alt="">
+                        </picture>
+                    </a>
+                    <div class="project__body">
+                        <p class="project__name">«Управление персоналом» и «Smart Service»</p>
+                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                    </div>
+                    <span class="project__stroke zoomIn wow"></span>
+                </li><!-- / .project -->
+                <li class="projects__item project">
+                    <a class="project__head" href="#">
+                        <picture class="project__img-box">
+                            <source srcset="img/base/project-2@1x.webp 1x, img/base/project-2@2x.webp 2x" type="image/webp">
+                            <img class="project__img"
+                                 src="img/base/project-2@1x.jpg"
+                                 srcset="img/base/project-2@2x.jpg 2x"
+                                 width="540"
+                                 height="430"
+                                 alt="">
+                        </picture>
+                        <picture class="project__logo-box">
+                            <source srcset="img/base/project-logo-2@1x.webp 1x, img/base/project-logo-2@2x.webp 2x" type="image/webp">
+                            <img class="project__logo" src="img/base/project-logo-2@1x.png" srcset="img/base/project-logo-2@2x.png 2x" alt="">
+                        </picture>
+                    </a>
+                    <div class="project__body">
+                        <p class="project__name">Командный коучинг</p>
+                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                    </div>
+                </li><!-- / .project -->
+                <li class="projects__item project">
+                    <a class="project__head" href="#">
+                        <picture class="project__img-box">
+                            <source srcset="img/base/project-3@1x.webp 1x, img/base/project-3@2x.webp 2x" type="image/webp">
+                            <img class="project__img"
+                                 src="img/base/project-3@1x.jpg"
+                                 srcset="img/base/project-3@2x.jpg 2x"
+                                 width="540"
+                                 height="430"
+                                 alt="">
+                        </picture>
+                        <picture class="project__logo-box">
+                            <source srcset="img/base/project-logo-3@1x.webp 1x, img/base/project-logo-3@2x.webp 2x" type="image/webp">
+                            <img class="project__logo" src="img/base/project-logo-3@1x.png" srcset="img/base/project-logo-3@2x.png 2x" alt="">
+                        </picture>
+                    </a>
+                    <div class="project__body">
+                        <p class="project__name">«Управление персоналом» и «Smart Service»</p>
+                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                    </div>
+                    <span class="project__stroke zoomIn wow"></span>
+                </li><!-- / .project -->
+                <li class="projects__item project">
+                    <a class="project__head" href="#">
+                        <picture class="project__img-box">
+                            <source srcset="img/base/project-4@1x.webp 1x, img/base/project-4@2x.webp 2x" type="image/webp">
+                            <img class="project__img"
+                                 src="img/base/project-4@1x.jpg"
+                                 srcset="img/base/project-4@2x.jpg 2x"
+                                 width="540"
+                                 height="430"
+                                 alt="">
+                        </picture>
+                        <picture class="project__logo-box">
+                            <source srcset="img/base/project-logo-1@1x.webp 1x, img/base/project-logo-1@2x.webp 2x" type="image/webp">
+                            <img class="project__logo" src="img/base/project-logo-1@1x.png" srcset="img/base/project-logo-1@2x.png 2x" alt="">
+                        </picture>
+                    </a>
+                    <div class="project__body">
+                        <p class="project__name">«Управление персоналом»</p>
+                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                    </div>
+                </li><!-- / .project -->
+            </ul>
+            <p class="projects__more-box">
+                <a class="projects__more btn-more" href="#">Больше кейсов</a>
+            </p>
+        </div>
+    </section><!-- / .projects -->
+
+    <section class="instagram">
+        <div class="container">
+            <strong class="instagram__title heading-2 fadeInLeft wow">Мы в Instagram</strong>
+            <div class="instagram__box fadeInUp wow">
+                <div class="instagram__head">
+                    <a class="instagram__avatar-link" href="https://www.instagram.com/smart_hands_" target="_blank" rel="noopener nofollow">
+                        <img class="instagram__avatar" src="img/base/instagram-avatar.jpg" alt="">
+                    </a>
+                    <a class="instagram__button button button--fill" href="https://www.instagram.com/smart_hands_" target="_blank" rel="noopener nofollow">Подписаться</a>
+                </div>
+                <div class="instagram__text">
+                    <blockquote>
+                        «Сознание команды переворачивается в хорошем смысле»
+                    </blockquote>
+                    <cite>Анна Пущина,<br> руководитель сети салонов «Персона»</cite>
+                    <p>
+                        Команда салона красоты заряжена на результат!
+                        У многих переворачивается сознание в хорошем смысле. Люди перестают
+                        выполнять свою работу механически, приходя и отсиживая на работе.
+                        Они начинают получать от нее удовольствие!
+                    </p>
+                    <p>
+                        Отзыв Анны Пущиной - руководителем отдела маркетинга салонов красоты Персона.
+                    </p>
+                    <p>
+                        А мы напонминаем, для того чтобы провести командный коучинг для
+                        своей команды и достигнуть нового результата, достаточно связаться
+                        с нами по тел.: <a href="tel:894951780402">8 9 (495) 178 04 02</a> Александра и Алексей.
+                    </p>
+                    <p>Всего вам самого красивого</p>
+                </div>
+                <ul class="instagram__gallery gallery-instagram">
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-1.jpg" width="200" height="200" alt="">
+                    </li>
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-2.jpg" width="200" height="200" alt="">
+                    </li>
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-3.jpg" width="200" height="200" alt="">
+                    </li>
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-4.jpg" width="200" height="200" alt="">
+                    </li>
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-5.jpg" width="200" height="200" alt="">
+                    </li>
+                    <li class="gallery-instagram__item">
+                        <img class="gallery-instagram__img" src="img/base/instagram-post-6.jpg" width="200" height="200" alt="">
+                    </li>
+                </ul><!-- / .gallery-instagram -->
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <strong class="reviews__title heading-2 fadeInLeft wow" id="js-reviews">Что говорят<br> о нас</strong>
+            <ul class="reviews__list">
+                <li class="reviews__item slideInRight wow">
+                    <picture class="reviews__avatar-box">
+                        <source srcset="img/base/review-1@1x.webp 1x, img/base/review-1@2x.webp 2x" type="image/webp">
+                        <img class="reviews__avatar" src="img/base/review-1@1x.jpg" srcset="img/base/review-1@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="reviews__text">
+                        <strong>Анна Пущина</strong>
+                        <em>Директор по продажам сети салонов красоты "ПЕРСОНА"</em>
+                        <p>
+                            Мы рады поработать с такими звездами! Инновационный подход дал толчок к
+                            новому формату продаж. Я вижу как люди звряжены на результат.
+                        </p>
+                    </div>
+                </li>
+                <li class="reviews__item slideInRight wow">
+                    <picture class="reviews__avatar-box">
+                        <source srcset="img/base/review-2@1x.webp 1x, img/base/review-2@2x.webp 2x" type="image/webp">
+                        <img class="reviews__avatar" src="img/base/review-2@1x.jpg" srcset="img/base/review-2@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="reviews__text">
+                        <strong>Евгений Папунаишвили</strong>
+                        <em>Руководитель сети школ танцев "ШТЕП"</em>
+                        <p>
+                            Вы даже не представляете как много вы нам дали. Многие моменты
+                            были для меня настоящим открытием.
+                        </p>
+                    </div>
+                </li>
+                <li class="reviews__item slideInRight wow">
+                    <picture class="reviews__avatar-box">
+                        <source srcset="img/base/review-3@1x.webp 1x, img/base/review-3@2x.webp 2x" type="image/webp">
+                        <img class="reviews__avatar" src="img/base/review-3@1x.jpg" srcset="img/base/review-3@2x.jpg 2x" alt="">
+                    </picture>
+                    <div class="reviews__text">
+                        <strong>Гульшат Степанова</strong>
+                        <em>Владелица салона красоты L'avenue</em>
+                        <p>
+                            Саша!!!!!! Огроменное спасибо!!!!!!! за эмоции!
+                            незабываемые впечатления! За крутую прокачку!!!!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section><!-- / .reviews -->
+
+    <section class="customers">
+        <div class="container">
+            <strong class="customers__title heading-2 fadeInDown wow">С нами уже<br> сотрудничают</strong>
+            <ul class="customers__list">
+                <li class="customers__item fadeInDown wow" data-wow-delay="0.0s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-1@1x.webp 1x, img/base/client-1@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-1@1x.jpg"
+                             srcset="img/base/client-1@2x.jpg 2x"
+                             width="97"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="0.2s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-2@1x.webp 1x, img/base/client-2@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-2@1x.jpg"
+                             srcset="img/base/client-2@2x.jpg 2x"
+                             width="193"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="0.4s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-3@1x.webp 1x, img/base/client-3@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-3@1x.jpg"
+                             srcset="img/base/client-3@2x.jpg 2x"
+                             width="158"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="0.6s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-4@1x.webp 1x, img/base/client-4@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-4@1x.jpg"
+                             srcset="img/base/client-4@2x.jpg 2x"
+                             width="309"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="0.8s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-5@1x.webp 1x, img/base/client-5@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-5@1x.jpg"
+                             srcset="img/base/client-5@2x.jpg 2x"
+                             width="112"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="1s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-6@1x.webp 1x, img/base/client-6@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-6@1x.jpg"
+                             srcset="img/base/client-6@2x.jpg 2x"
+                             width="124"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="1.2s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-7@1x.webp 1x, img/base/client-7@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-7@1x.jpg"
+                             srcset="img/base/client-7@2x.jpg 2x"
+                             width="183"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="1.4s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-8@1x.webp 1x, img/base/client-8@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-8@1x.jpg"
+                             srcset="img/base/client-8@2x.jpg 2x"
+                             width="185"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="1.6s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-9@1x.webp 1x, img/base/client-9@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-9@1x.jpg"
+                             srcset="img/base/client-9@2x.jpg 2x"
+                             width="104"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="1.8s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-10@1x.webp 1x, img/base/client-10@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-10@1x.jpg"
+                             srcset="img/base/client-10@2x.jpg 2x"
+                             width="196"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="2s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-11@1x.webp 1x, img/base/client-11@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-11@1x.jpg"
+                             srcset="img/base/client-11@2x.jpg 2x"
+                             width="295"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="2.2s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-12@1x.webp 1x, img/base/client-12@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-12@1x.jpg"
+                             srcset="img/base/client-12@2x.jpg 2x"
+                             width="127"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="2.4s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-13@1x.webp 1x, img/base/client-13@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-13@1x.jpg"
+                             srcset="img/base/client-13@2x.jpg 2x"
+                             width="220"
+                             alt="">
+                    </picture>
+                </li>
+                <li class="customers__item fadeInDown wow" data-wow-delay="2.6s">
+                    <picture class="customers__img-box">
+                        <source srcset="img/base/client-14@1x.webp 1x, img/base/client-14@2x.webp 2x" type="image/webp">
+                        <img class="customers__img"
+                             src="img/base/client-14@1x.jpg"
+                             srcset="img/base/client-14@2x.jpg 2x"
+                             width="229"
+                             alt="">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </section><!-- / .customers -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__left">
+                <a class="main-footer__logo">
+                    <img src="img/base/logo-white.svg" width="179" height="22" alt="Smart Hands">
+                </a>
+            </div>
+            <div class="main-footer__center">
+                <p class="main-footer__site">Сайт</p>
+                <ul class="main-footer__nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Программы</a></li>
+                    <li class="scrollto"><a href="#js-reviews">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__right">
+                <ul class="main-footer__contacts contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--phone" href="tel:89998999999">
+                            8 999 899 - 99 - 99
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:info@smarthands.com">
+                            info@smarthands.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--map" href="https://goo.gl/maps/bf9Ngju6zmqBGXRy6" target="_blank">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        </a>
+                    </li>
+                </ul><!-- / .contacts -->
+                <div class="main-footer__social-box">
+                    <p class="main-footer__social-title">Подписывайтесь:</p>
+                    <ul class="main-footer__social social">
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank" rel="noopener nofollow">
+                                <span class="visually-hidden">Наша группа в Facebook</span>
+                                <svg width="10" height="16" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" fill="#918a81"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.instagram.com/smart_hands_" target="_blank" rel="noopener nofollow">
+                                <span class="visually-hidden">Наша страница в Instagram</span>
+                                <svg width="16" height="19" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="#918a81"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+                        </li>
+                    </ul><!-- / .social -->
+                </div>
+            </div>
+        </div>
+    </footer><!-- / .main-footer -->
 
     <!-- jQuery -->
-    <!-- Bootstrap -->
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Slick Slider -->
-    <!-- Arctic Modal -->
-    <!-- Masked Input -->
-    <!-- jQuery mb.browser -->
+    <script src="js/slick.min.js"></script>
+    <!-- WOW -->
+    <script src="js/wow.js"></script>
     <!-- Basic Init -->
+    <script src="js/basic-init.js"></script>
 </body>
 </html>

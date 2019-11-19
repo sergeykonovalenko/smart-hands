@@ -1,0 +1,45 @@
+.main-header {
+
+    &--home {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -94px;
+    }
+}
+
+.main-header__nav {
+    
+}
+
+.main-header__nav ul {
+    @include reset-list;
+
+    display: flex;
+}
+
+.main-header__nav li {
+
+}
+
+.main-header__nav a {
+    display: block;
+    padding: 26px 32px 32px;
+    font-size: 24px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #212229;
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        color: #85622e;
+    }
+}
+
+.main-header__nav--home a {
+    height: 94px;
+}
+
+.main-header__nav--home li:first-child a {
+    padding-left: 0;
+}

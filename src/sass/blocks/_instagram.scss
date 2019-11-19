@@ -1,0 +1,87 @@
+.instagram {
+    padding-top: 130px;
+}
+
+.instagram__title {
+    margin-bottom: 55px;
+}
+
+.instagram__box {
+    display: flex;
+}
+
+.instagram__head {
+    flex-shrink: 0;
+    width: 165px;
+    margin-right: 60px;
+}
+
+.instagram__avatar-link {
+    display: block;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+
+.instagram__avatar {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.instagram__button {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.instagram__text {
+    flex-grow: 1;
+    margin-right: 60px;
+    line-height: 1.4375em;
+}
+
+.instagram__text blockquote {
+    margin: 0 0 10px 0;
+    font-size: 27px;
+    line-height: 1.5185em;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.instagram__text cite {
+    display: block;
+    margin-bottom: 34px;
+    font-style: normal;
+    text-align: right;
+    color: #635848;
+}
+
+.instagram__text p {
+    margin: 23px 0;
+}
+
+.instagram__text a {
+    color: #4e4e4e;
+    transition: all .15s ease-in;
+    
+    &:hover,
+    &:focus {
+        color: #85622e;
+    }
+}
+
+.instagram__text *:first-child {
+    margin-top: 0;
+}
+
+.instagram__text *:last-child {
+    margin-bottom: 0;
+}
+
+.instagram__gallery {
+    flex-shrink: 0;
+    width: 425px;
+    margin: 0;
+}

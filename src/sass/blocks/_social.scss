@@ -1,0 +1,30 @@
+.social {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social__item {
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: #d1c7bb;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transition: all .6s ease;
+
+    &:hover,
+    &:focus {
+        transform: rotate(360deg);
+    }
+}
