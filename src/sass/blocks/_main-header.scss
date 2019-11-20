@@ -8,7 +8,10 @@
 }
 
 .main-header__nav {
-    
+
+    &--internal {
+        border-bottom: 2px solid #85622e;
+    }
 }
 
 .main-header__nav ul {
@@ -30,6 +33,7 @@
     cursor: pointer;
     transition: all .15s ease-in;
 
+
     &:hover,
     &:focus {
         color: #85622e;
@@ -42,4 +46,17 @@
 
 .main-header__nav--home li:first-child a {
     padding-left: 0;
+}
+
+.main-header__nav--internal a {
+    height: auto;
+}
+
+.main-header__nav--internal .current-menu-item a {
+    background-color: #f1f1f1;
+
+    &:hover,
+    &:focus {
+        color: #212229;
+    }
 }

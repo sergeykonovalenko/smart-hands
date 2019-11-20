@@ -95,3 +95,44 @@ Author: Sergey Konovalenko
 @import "blocks/main-footer";
 @import "blocks/contacts";
 @import "blocks/social";
+
+
+
+/* ==========================================================================
+   PROGRAMS PAGE
+   ========================================================================== */
+
+/* Internal nav
+   ========================================================================== */
+@import "blocks/internal-nav-box";
+@import "blocks/internal-nav";
+
+/* Offer programs
+   ========================================================================== */
+@import "blocks/offer-programs";
+
+/* For whom
+   ========================================================================== */
+@import "blocks/for-whom";
+
+/* Purpose
+   ========================================================================== */
+@import "blocks/purpose";
+
+/* Result
+   ========================================================================== */
+@import "blocks/result";
+
+/* Program content
+   ========================================================================== */
+@import "blocks/program-content";
+@import "blocks/item-program-content";
+
+/* Program details
+   ========================================================================== */
+@import "blocks/program-details";
+
+/* Request
+   ========================================================================== */
+@import "blocks/request";
+@import "blocks/form";

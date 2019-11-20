@@ -1,0 +1,58 @@
+.purpose {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 53px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: #85622e;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: -56px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 56px 56px 0 56px;
+        border-color: #fff transparent transparent transparent;
+        transform: translate(-50%, 0);
+    }
+}
+
+.purpose__title {
+
+}
+
+.purpose__text {
+    text-align: center;
+}
+
+.purpose__text .heading-2 {
+    margin-bottom: 25px;
+}
+
+.purpose__text p {
+    margin: 16px 0;
+}
+
+.purpose__text *:first-child {
+    margin-top: 0;
+}
+
+.purpose__text *:last-child {
+    margin-bottom: 0;
+}
+

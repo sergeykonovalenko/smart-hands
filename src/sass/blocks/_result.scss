@@ -1,0 +1,50 @@
+.result {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #e8e5e1;
+}
+
+.result__box {
+    padding: 50px 30px 80px;
+    background-color: #fff;
+}
+
+.result__title {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.result__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 925px;
+    margin: 0 auto;
+}
+
+.result__item {
+    display: flex;
+    margin-right: 65px;
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(n + 3) {
+        margin-top: 95px;
+    }
+}
+
+.result__item span {
+    width: 70px;
+    font-size: 55px;
+    line-height: 1;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #85622e;
+}
+
+.result__item p {
+    width: 360px;
+    margin: 0;
+}

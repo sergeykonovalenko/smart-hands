@@ -1,0 +1,29 @@
+.program-content {
+    padding-top: 70px;
+}
+
+.program-content__title {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.program-content__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.program-content__item {
+    margin-right: 115px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+        margin-top: 105px;
+    }
+}

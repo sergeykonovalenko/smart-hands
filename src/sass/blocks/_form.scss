@@ -1,0 +1,31 @@
+.form {
+    width: 585px;
+}
+
+.form__list {
+    @include reset-list;
+
+    margin-bottom: 75px;
+}
+
+.form__item {
+    margin-bottom: 28px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__label {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 23px;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #85622e;
+    cursor: pointer;
+}
+
+.form__button {
+    display: flex;
+    margin: 0 auto;
+}

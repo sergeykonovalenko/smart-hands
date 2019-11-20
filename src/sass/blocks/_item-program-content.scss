@@ -1,0 +1,42 @@
+.item-program-content {
+    width: 230px;
+}
+
+.item-program-content__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.item-program-content__number {
+    flex-shrink: 0;
+    width: 75px;
+}
+
+.item-program-content__number span {
+    display: inline-block;
+    font-size: 55px;
+    line-height: 1;
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #85622e;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin: 14px auto 0;
+        background-color: #85622e;
+    }
+}
+
+.item-program-content__title {
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.1729em;
+    font-family: "Poiret One", Tahoma, sans-serif;
+}
+
+.item-program-content__text {
+    margin: 0;
+}

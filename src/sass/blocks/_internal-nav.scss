@@ -1,0 +1,99 @@
+.internal-nav {
+    padding: 0;
+    list-style: none;
+
+    &--row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.internal-nav li {
+
+}
+
+.internal-nav--row > li {
+    position: relative;
+    flex-grow: 1;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -1px;
+        width: 2px;
+        height: 24px;
+        background-color: #85622e;
+        transform: translate(0, -50%);
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.internal-nav a {
+    font-family: "Poiret One", Tahoma, sans-serif;
+    color: #212229;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        color: #85622e;
+    }
+}
+
+.internal-nav .current-menu-item a ,
+.internal-nav .current-menu-ancestor > a {
+    color: #85622e;
+}
+
+.internal-nav--row > li > a {
+    display: block;
+    padding: 26px 32px 32px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.internal-nav--row .sub-menu {
+    @include reset-list;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 400px;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 4px 4px 17px 0.72px rgba(38, 52, 27, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0.9);
+    transform-origin: 50% 0;
+    transition: transform 0ms 300ms,
+                opacity 300ms,
+                visibility 0ms 300ms;
+}
+
+.internal-nav--row .menu-item-has-children:hover .sub-menu,
+.internal-nav--row .menu-item-has-children:focus .sub-menu {
+    transform: scaleY(1);
+    transition: transform 300ms,
+                opacity 200ms;
+    opacity: 1;
+    visibility: visible;
+}
+
+.internal-nav--row .sub-menu ul {
+
+}
+
+.internal-nav--row .sub-menu li {
+
+}
+
+.internal-nav--row .sub-menu a {
+    display: block;
+    padding: 7px 20px;
+    font-size: 20px;
+}

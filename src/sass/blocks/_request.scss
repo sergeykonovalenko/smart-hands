@@ -1,0 +1,35 @@
+.request {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.request__head {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.request__head .heading-2 {
+    margin-bottom: 22px;
+}
+
+.request__head p {
+    margin: 16px 0;
+}
+
+.request__head p strong {
+    font-weight: 400;
+    font-size: 20px;
+    color: #85622e;
+}
+
+.request__head *:first-child {
+    margin-top: 0;
+}
+
+.request__head *:last-child {
+    margin-bottom: 0;
+}
+
+.request__form {
+    margin: 0 auto;
+}
