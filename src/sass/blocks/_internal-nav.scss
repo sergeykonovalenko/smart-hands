@@ -97,3 +97,20 @@
     padding: 7px 20px;
     font-size: 20px;
 }
+
+.internal-nav--column li {
+    margin-bottom: 34px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.current-menu-item {
+        padding-left: 18px;
+    }
+}
+
+.internal-nav--column a {
+    font-size: 20px;
+    line-height: 1.15em;
+}
