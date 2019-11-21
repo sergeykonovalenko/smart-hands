@@ -1,0 +1,23 @@
+.contacts-page {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+}
+
+.contacts-page__title {
+    margin-top: 0;
+    margin-bottom: 36px;
+    text-align: center;
+
+    &.wow {
+        visibility: hidden;
+    }
+}
+
+.contacts-page__contacts {
+    margin: 0 0 0 120px;
+
+    &.wow {
+        visibility: hidden;
+    }
+}

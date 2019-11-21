@@ -25,11 +25,18 @@
     margin-top: 0;
     margin-bottom: 28px;
     text-align: center;
-    visibility: hidden;
+    
+    &.wow {
+        visibility: hidden;
+    }
 }
 
 .cases__content .wp-block-embed-youtube {
     margin: 0 0 70px 32px;
+    
+    &.wow {
+        visibility: hidden;
+    }
 }
 
 .cases__content .wp-block-embed__wrapper {

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,7 +43,7 @@
                    <li><a href="programs.html">Программы</a></li>
                    <li><a href="cases.html">Кейсы</a></li>
                    <li class="scrollto"><a href="#js-reviews">Отзывы</a></li>
-                   <li><a href="#">Контакты</a></li>
+                   <li><a href="contacts.html">Контакты</a></li>
                </ul>
            </nav>
        </div>
@@ -257,7 +258,7 @@
                         </ul><!-- / .checkbox-list -->
                     </li>
                 </ol>
-                <button class="three-questions-form__button button button--stroke">получить реккомендации</button>
+                <button class="three-questions-form__button button button--stroke" type="button">получить реккомендации</button>
             </form><!-- / .three-questions-form -->
         </div>
     </section><!-- / .three-questions -->
@@ -711,7 +712,7 @@
                     <li><a href="cases.html">Кейсы</a></li>
                     <li><a href="programs.html">Программы</a></li>
                     <li class="scrollto"><a href="#js-reviews">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div class="main-footer__right">
@@ -753,12 +754,39 @@
         </div>
     </footer><!-- / .main-footer -->
 
+    <!-- Tips Popup -->
+    <div class="tips-popup modal-common" id="js-tips-popup">
+        <p class="tips-popup__title">
+            Узнайте как создать <strong>стабильный поток клиентов.</strong><br>
+            Получите рекомендации экспертов прямо сейчас
+        </p>
+        <form class="tips-popup__form form js-form" action="#" method="post">
+            <ul class="form__list">
+                <li class="form__item">
+                    <label class="form__label" for="form-name">Ваше имя</label>
+                    <input class="form__field" id="form-name" type="text" name="name" placeholder="Введите ваше имя" required>
+                </li>
+                <li class="form__item">
+                    <label class="form__label" for="form-email">Ваш E-mail</label>
+                    <input class="form__field" id="form-email" type="email" name="email" placeholder="Введите ваш E-mail" required>
+                </li>
+                <li class="form__item">
+                    <label class="form__label" for="form-phone">Ваш телефон</label>
+                    <input class="form__field" id="form-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </li>
+            </ul>
+            <button class="form__button button button--stroke" data-submit>получить реккомендации</button>
+        </form><!-- / .form -->
+    </div><!-- / .chipper-popup -->
+
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Slick Slider -->
     <script src="js/slick.min.js"></script>
     <!-- WOW -->
     <script src="js/wow.js"></script>
+    <!-- jQuery FancyBox -->
+    <script src="js/jquery.fancybox.min.js"></script>
     <!-- jQuery Validate -->
     <script src="js/jquery.validate.min.js"></script>
     <!-- jQuery Masked Input -->

@@ -6,6 +6,10 @@
 .request__head {
     margin-bottom: 50px;
     text-align: center;
+
+    &--on-the-first-screen.wow {
+        visibility: hidden;
+    }
 }
 
 .request__head .heading-2 {

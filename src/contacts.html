@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <!-- SEO -->
-    <title>Smart Hands – Кейсы</title>
+    <title>Smart Hands – Контакты</title>
     <meta name="description" content="Тренеры с международным управленческим опытом помогут построить сильную команду, чтобы вывести ваш бизнес на новый уровень 👍">
     <meta name="keywords" content="коучинг, бизнес коуч, командный коучинг, коучинг в индустрии красоты, салон красоты">
     <!-- Favicon -->
@@ -41,49 +41,67 @@
             <nav class="main-header__nav main-header__nav--internal">
                 <ul>
                     <li><a href="programs.html">Программы</a></li>
-                    <li class="current-menu-item"><a href="cases.html">Кейсы</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
                     <li class="scrollto"><a href="index.html#js-reviews">Отзывы</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="current-menu-item"><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header><!-- .main-header -->
 
-    <div class="cases">
+    <section class="contacts-page">
         <div class="container">
-            <aside class="cases__sidebar">
-                <ul class="cases__nav internal-nav internal-nav--column">
-                    <li class="current-menu-item"><a href="cases.html">Сеть салонов красоты «Персона»</a></li>
-                    <li><a href="cases.html">Школа танцев «Штеп»</a></li>
-                    <li><a href="cases.html">Сеть отелей «Four Elements Hotels»</a></li>
-                    <li><a href="cases.html">Бренд LANCOME</a></li>
-                    <li><a href="cases.html">Салон красоты «Стричь»</a></li>
-                    <li><a href="cases.html">МТС</a></li>
-                    <li><a href="cases.html">Салон красоты «L’Avenue»</a></li>
-                    <li><a href="cases.html">Сеть салонов красоты Saniya Ilyasova</a></li>
-                </ul><!-- / .internal-nav -->
-            </aside>
-
-            <main class="cases__content">
-                <h1 class="heading-2 heading-2--no-uppercase zoomIn wow">Сеть салонов красоты<br> «Персона»</h1>
-                <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube zoomIn wow wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                    <div class="wp-block-embed__wrapper">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vd7YLwABt7s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </figure>
-                <p>
-                    Провели стратегическую сессию для команды крупнейшей сети салонов
-                    красоты в России и СНГ, в ходе которой:
-                </p>
-                <ul>
-                    <li>Сформулировали ценности, миссию и цель на ближайшие 365 дней</li>
-                    <li>Создали правила внутреннего и внешнего взаимодействия команды</li>
-                    <li>Разработали план реализации поставленных задач и описали первые шаги к их достижению</li>
-                </ul>
-                <p>Наша совместная работа позволила трансформировать группу людей в настоящую команду, объединить их вокруг общей цели. Участники тренинга научились выстраивать позитивное взаимодействие между собой и находить индивидуальный подход к каждому клиенту.</p>
-            </main>
+            <h1 class="contacts-page__title heading-2 zoomIn wow">Контакты</h1>
+            <ul class="contacts-page__contacts contacts contacts--in-content slideInLeft wow">
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link--phone" href="tel:89998999999">
+                        8 999 999 - 99 - 99
+                    </a><br>
+                    <a class="contacts__link" href="tel:89871588599">8 987 158-85-99</a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link--email" href="mailto:info@smarthands.com">
+                        info@smarthands.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link--map" href="https://goo.gl/maps/bf9Ngju6zmqBGXRy6" target="_blank">
+                        Adress, City, Street, and other information
+                    </a>
+                </li>
+            </ul><!-- / .contacts -->
         </div>
-    </div><!-- / .cases -->
+    </section><!-- / .contacts -->
+
+    <section class="request">
+        <div class="container">
+            <div class="request__head request__head--on-the-first-screen fadeInDown wow">
+                <strong class="heading-2 heading-2--no-uppercase">Напишите нам</strong>
+                <p>и мы ответим на любые ваши вопросы</p>
+            </div>
+            <form class="request__form form js-form" action="#" method="post">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label class="form__label" for="form-name">Ваше имя</label>
+                        <input class="form__field" id="form-name" type="text" name="name" placeholder="Введите ваше имя" required>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="form-email">Ваш E-mail</label>
+                        <input class="form__field" id="form-email" type="email" name="email" placeholder="Введите ваш E-mail" required>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="form-phone">Ваш телефон</label>
+                        <input class="form__field" id="form-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="form-message">Ваше сообщение</label>
+                        <input class="form__field" id="form-message" type="text" name="message" placeholder="Введите ваше сообщение">
+                    </li>
+                </ul>
+                <button class="form__button button button--fill" data-submit>Отправить заявку</button>
+            </form><!-- / .form -->
+        </div>
+    </section><!-- / .request -->
 
     <footer class="main-footer">
         <div class="container">
