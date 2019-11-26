@@ -7,7 +7,7 @@
     overflow-y: visible;
 }
 
-.offer-home .container:last-child::after {
+.offer-home .container::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -21,13 +21,14 @@
 .offer-home__title {
     position: relative;
     z-index: 2;
+    width: 570px;
     margin-top: 0;
     margin-bottom: 90px;
     font-weight: 400;
     
-    &.wow {
-        visibility: hidden;
-    }
+    //&.wow {
+    //    visibility: hidden;
+    //}
 }
 
 .offer-home__title span {
@@ -60,12 +61,12 @@
     width: calc(100% + 15px);
     z-index: 2;
     min-height: 370px;
-    padding: 68px 0 34px 95px;
+    padding: 68px 30px 35px 95px;
     background-color: #efece8;
     
-    &.wow {
-        visibility: hidden;
-    }
+    //&.wow {
+    //    visibility: hidden;
+    //}
 }
 
 .offer-home__info p {
@@ -76,4 +77,100 @@
     font-family: "Poiret One", Tahoma, sans-serif;
     text-transform: uppercase;
     color: #4e4e4e;
+}
+
+@media screen and (max-width: 1200px) {
+    .offer-home__title {
+        width: 375px;
+    }
+
+    .offer-home__info {
+        min-height: 280px;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    .offer-home__info p {
+        width: 325px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer-home {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .offer-home .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .offer-home__title {
+        width: 690px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    .offer-home__img {
+        position: static;
+        margin-left: auto;
+    }
+
+    .offer-home__info {
+        width: 100%;
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+
+    .offer-home__info p {
+        width: 100%;
+    }
+
+    .offer-home__info br {
+        display: none;
+    }
+
+    .offer-home .container::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer-home__title {
+        width: 510px;
+    }
+
+    .offer-home__title span {
+
+        &:first-child {
+            font-size: 73px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer-home__title {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .offer-home__title span {
+
+        &:first-child {
+            font-size: 40px;
+        }
+
+        &:last-child {
+            font-size: 22px;
+        }
+    }
+
+    .offer-home__info {
+        padding: 25px 15px;
+    }
+
+    .offer-home__info p {
+        line-height: 1.6875em;
+    }
 }

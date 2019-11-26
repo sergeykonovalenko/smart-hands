@@ -50,3 +50,49 @@
 .slide-area__more {
     margin-top: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+    .slide-area__box {
+        display: block;
+    }
+
+    .slide-area__box picture {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .slide-area__text {
+        width: 930px;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slide-area__text {
+        width: 690px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide-area__img {
+        height: 290px;
+    }
+
+    .slide-area__text {
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slide-area__img {
+        height: 235px;
+    }
+
+    .slide-area__text {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

@@ -60,3 +60,86 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .solvable-problems .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .solvable-problems__title {
+        width: 690px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .solvable-problems__img {
+        position: static;
+        width: 100%;
+        height: 384px;
+    }
+
+    .solvable-problems__list {
+        width: 690px;
+        margin: -21px auto 0;
+        padding-top: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solvable-problems__title {
+        width: 510px;
+    }
+
+    .solvable-problems__img {
+        height: 290px;
+    }
+
+    .solvable-problems__list {
+        width: 510px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .solvable-problems__item {
+        width: 187px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .solvable-problems__title {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .solvable-problems__img {
+        height: 235px;
+    }
+
+    .solvable-problems__list {
+        width: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .solvable-problems__item {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .solvable-problems__item {
+        width: calc(50% - 15px);
+        font-size: 14px;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+
+            &::after {
+                right: -15px;
+            }
+        }
+    }
+}

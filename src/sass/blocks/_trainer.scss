@@ -15,3 +15,21 @@
 .trainer__trainers-list {
     margin: 0;
 }
+
+@media screen and (max-width: 576px) {
+    .trainer {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .trainer .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .trainer__title,
+    .trainer__triggers {
+        padding: 0 15px;
+    }
+}

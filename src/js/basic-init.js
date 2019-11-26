@@ -11,6 +11,11 @@ $(document).ready(function () {
     );
     wow.init();
 
+    // show/hide mobile menu
+    $('.main-header__hamburger').on('click', function () {
+        $('body').toggleClass('show-main-nav');
+    });
+
     // area slider
     $('.area-slider-box').slick({
         dots: true,

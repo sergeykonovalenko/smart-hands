@@ -38,14 +38,37 @@
 
     <header class="main-header main-header--home">
        <div class="container">
-           <nav class="main-header__nav main-header__nav--home">
-               <ul>
+           <nav class="main-nav main-nav--home">
+               <ul class="main-nav__menu">
                    <li><a href="programs.html">Программы</a></li>
                    <li><a href="cases.html">Кейсы</a></li>
                    <li class="scrollto"><a href="#js-reviews">Отзывы</a></li>
                    <li><a href="contacts.html">Контакты</a></li>
                </ul>
-           </nav>
+               <ul class="main-nav__contacts contacts contacts--dark contacts--medium">
+                   <li class="contacts__item">
+                       <a class="contacts__link contacts__link--phone" href="tel:89998999999">
+                           8 999 999 - 99 - 99
+                       </a><br>
+                       <a class="contacts__link" href="tel:89871588599">8 987 158-85-99</a>
+                   </li>
+                   <li class="contacts__item">
+                       <a class="contacts__link contacts__link--email" href="mailto:info@smarthands.com">
+                           info@smarthands.com
+                       </a>
+                   </li>
+                   <li class="contacts__item">
+                       <a class="contacts__link contacts__link--map" href="https://goo.gl/maps/bf9Ngju6zmqBGXRy6" target="_blank">
+                           Adress, City, Street, and other information
+                       </a>
+                   </li>
+               </ul><!-- / .contacts -->
+           </nav><!-- / .main-nav -->
+           <button class="main-header__hamburger" type="button" title="Главное меню">
+               <b></b>
+               <b></b>
+               <b></b>
+           </button>
        </div>
     </header><!-- .main-header -->
 
@@ -134,18 +157,18 @@
 
     <section class="solvable-problems">
         <div class="container">
-            <strong class="solvable-problems__title heading-2 fadeInLeft wow">Какие проблемы для бизнеса<br> мы решаем</strong>
+            <strong class="solvable-problems__title heading-2 fadeInLeft wow">Какие проблемы<br> для бизнеса<br> мы решаем</strong>
             <picture>
                 <source srcset="img/base/solvable-problems@1x.webp 1x, img/base/solvable-problems@2x.webp 2x" type="image/webp">
                 <img class="solvable-problems__img slideInRight wow" src="img/base/solvable-problems@1x.jpg" srcset="img/base/solvable-problems@2x.jpg 2x" alt="">
             </picture>
             <ul class="solvable-problems__list">
-                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.0s">Плохая дисциплина<br> и конфликты в коллективе</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.0s">Плохая дисциплина<br> и конфликты в<br> коллективе</li>
                 <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.2s">Сплоченная<br> команда настроена<br> на результат</li>
-                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.4s">Низкая<br> вовлеченность сотрудников</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.4s">Низкая<br> вовлеченность<br> сотрудников</li>
                 <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.6s">Сотрудники<br> заряжены на продажи</li>
                 <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="0.8s">Неудовлетворенность клиентов сервисом</li>
-                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="1s">95% клиентов возвращаются к вам снова</li>
+                <li class="solvable-problems__item fadeInLeft wow" data-wow-delay="1s">95% клиентов<br> возвращаются к вам снова</li>
             </ul>
         </div>
     </section><!-- / .solvable-problems -->
@@ -180,7 +203,7 @@
                     <span class="steps-to-success__number">4</span>
                     <div class="steps-to-success__text">
                         <strong>Внедрение</strong>
-                        <p>Трансформация знаний в навыки</p>
+                        <p>Трансформация<br> знаний в навыки</p>
                         <p>Практика</p>
                     </div>
                 </li>
@@ -200,66 +223,68 @@
                     <img class="three-questions__img fadeInDown wow" src="img/base/three-questions@1x.png" srcset="img/base/three-questions@2x.png 2x" width="671" alt="">
                 </picture>
             </div>
-            <form class="three-questions-form" action="#">
-                <ol class="three-questions-form__list">
-                    <li class="three-questions-form__item">
-                        <p class="three-questions-form__title"><span>1</span> Какой вид программы вас интересует?</p>
-                        <ul class="three-questions-form__checkbox-list checkbox-list">
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="three-questions-form-individual" type="checkbox" name="individual">
-                                <label class="checkbox-list__label" for="three-questions-form-individual">Индивидуальная</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="three-questions-form-team" type="checkbox" name="team">
-                                <label class="checkbox-list__label" for="three-questions-form-team">Командная</label>
-                            </li>
-                        </ul><!-- / .checkbox-list -->
-                    </li>
-                    <li class="three-questions-form__item">
-                        <p class="three-questions-form__title"><span>2</span> Какой формат работы вам более удобен?</p>
-                        <ul class="three-questions-form__checkbox-list checkbox-list">
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="type-of-work-offline" type="checkbox" name="type-of-work-offline">
-                                <label class="checkbox-list__label" for="type-of-work-offline">Личная работа в режиме офлайн</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="type-of-work-online" type="checkbox" name="type-of-work-online">
-                                <label class="checkbox-list__label" for="type-of-work-online">Удаленная работа в режиме онлайн</label>
-                            </li>
-                        </ul><!-- / .checkbox-list -->
-                    </li>
-                    <li class="three-questions-form__item">
-                        <p class="three-questions-form__title"><span>3</span> Какова основная цель нашей совместной работы?</p>
-                        <ul class="three-questions-form__checkbox-list checkbox-list">
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="sales-boost" type="checkbox" name="sales-boost">
-                                <label class="checkbox-list__label" for="sales-boost">Повышение продаж</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="team-transformation" type="checkbox" name="team-transformation">
-                                <label class="checkbox-list__label" for="team-transformation">Трансформация команды</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="efficient-work-environment" type="checkbox" name="efficient-work-environment">
-                                <label class="checkbox-list__label" for="efficient-work-environment">Создание эффективной рабочей среды</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="service-level-improvement" type="checkbox" name="service-level-improvement">
-                                <label class="checkbox-list__label" for="service-level-improvement">Повышение уровня сервиса</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="achieving-new-results" type="checkbox" name="achieving-new-results">
-                                <label class="checkbox-list__label" for="achieving-new-results">Достижение новых результатов</label>
-                            </li>
-                            <li class="checkbox-list__item">
-                                <input class="checkbox-list__field visually-hidden" id="increase-customer-flow" type="checkbox" name="increase-customer-flow">
-                                <label class="checkbox-list__label" for="increase-customer-flow">Увеличение потока клиентов</label>
-                            </li>
-                        </ul><!-- / .checkbox-list -->
-                    </li>
-                </ol>
-                <button class="three-questions-form__button button button--stroke" type="button">получить реккомендации</button>
-            </form><!-- / .three-questions-form -->
+            <div class="three-questions__form-box">
+                <form class="three-questions-form" action="#">
+                    <ol class="three-questions-form__list">
+                        <li class="three-questions-form__item">
+                            <p class="three-questions-form__title"><span>1</span> Какой вид программы вас интересует?</p>
+                            <ul class="three-questions-form__checkbox-list checkbox-list">
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-individual" type="checkbox" name="individual">
+                                    <label class="checkbox-list__label" for="three-questions-form-individual">Индивидуальная</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-team" type="checkbox" name="team">
+                                    <label class="checkbox-list__label" for="three-questions-form-team">Командная</label>
+                                </li>
+                            </ul><!-- / .checkbox-list -->
+                        </li>
+                        <li class="three-questions-form__item">
+                            <p class="three-questions-form__title"><span>2</span> Какой формат работы вам более удобен?</p>
+                            <ul class="three-questions-form__checkbox-list checkbox-list">
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-offline" type="checkbox" name="type-of-work-offline">
+                                    <label class="checkbox-list__label" for="type-of-work-offline">Личная работа в режиме офлайн</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-online" type="checkbox" name="type-of-work-online">
+                                    <label class="checkbox-list__label" for="type-of-work-online">Удаленная работа в режиме онлайн</label>
+                                </li>
+                            </ul><!-- / .checkbox-list -->
+                        </li>
+                        <li class="three-questions-form__item">
+                            <p class="three-questions-form__title"><span>3</span> Какова основная цель нашей совместной работы?</p>
+                            <ul class="three-questions-form__checkbox-list checkbox-list">
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="sales-boost" type="checkbox" name="sales-boost">
+                                    <label class="checkbox-list__label" for="sales-boost">Повышение продаж</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="team-transformation" type="checkbox" name="team-transformation">
+                                    <label class="checkbox-list__label" for="team-transformation">Трансформация команды</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="efficient-work-environment" type="checkbox" name="efficient-work-environment">
+                                    <label class="checkbox-list__label" for="efficient-work-environment">Создание эффективной рабочей среды</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="service-level-improvement" type="checkbox" name="service-level-improvement">
+                                    <label class="checkbox-list__label" for="service-level-improvement">Повышение уровня сервиса</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="achieving-new-results" type="checkbox" name="achieving-new-results">
+                                    <label class="checkbox-list__label" for="achieving-new-results">Достижение новых результатов</label>
+                                </li>
+                                <li class="checkbox-list__item">
+                                    <input class="checkbox-list__field visually-hidden" id="increase-customer-flow" type="checkbox" name="increase-customer-flow">
+                                    <label class="checkbox-list__label" for="increase-customer-flow">Увеличение потока клиентов</label>
+                                </li>
+                            </ul><!-- / .checkbox-list -->
+                        </li>
+                    </ol>
+                    <button class="three-questions-form__button button button--stroke" type="button">получить реккомендации</button>
+                </form><!-- / .three-questions-form -->
+            </div>
         </div>
     </section><!-- / .three-questions -->
 
@@ -353,7 +378,7 @@
             <strong class="projects__title heading-2 fadeInLeft wow">Клиенты<br> и проекты</strong>
             <ul class="projects__list">
                 <li class="projects__item project">
-                    <a class="project__head" href="#">
+                    <a class="project__head" href="cases.html">
                         <picture class="project__img-box">
                             <source srcset="img/base/project-1@1x.webp 1x, img/base/project-1@2x.webp 2x" type="image/webp">
                             <img class="project__img"
@@ -370,12 +395,12 @@
                     </a>
                     <div class="project__body">
                         <p class="project__name">«Управление персоналом» и «Smart Service»</p>
-                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                        <a class="project__button button button--stroke" href="cases.html">подробнее</a>
                     </div>
                     <span class="project__stroke zoomIn wow"></span>
                 </li><!-- / .project -->
                 <li class="projects__item project">
-                    <a class="project__head" href="#">
+                    <a class="project__head" href="cases.html">
                         <picture class="project__img-box">
                             <source srcset="img/base/project-2@1x.webp 1x, img/base/project-2@2x.webp 2x" type="image/webp">
                             <img class="project__img"
@@ -392,11 +417,11 @@
                     </a>
                     <div class="project__body">
                         <p class="project__name">Командный коучинг</p>
-                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                        <a class="project__button button button--stroke" href="cases.html">подробнее</a>
                     </div>
                 </li><!-- / .project -->
                 <li class="projects__item project">
-                    <a class="project__head" href="#">
+                    <a class="project__head" href="cases.html">
                         <picture class="project__img-box">
                             <source srcset="img/base/project-3@1x.webp 1x, img/base/project-3@2x.webp 2x" type="image/webp">
                             <img class="project__img"
@@ -413,12 +438,12 @@
                     </a>
                     <div class="project__body">
                         <p class="project__name">«Управление персоналом» и «Smart Service»</p>
-                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                        <a class="project__button button button--stroke" href="cases.html">подробнее</a>
                     </div>
                     <span class="project__stroke zoomIn wow"></span>
                 </li><!-- / .project -->
                 <li class="projects__item project">
-                    <a class="project__head" href="#">
+                    <a class="project__head" href="cases.html">
                         <picture class="project__img-box">
                             <source srcset="img/base/project-4@1x.webp 1x, img/base/project-4@2x.webp 2x" type="image/webp">
                             <img class="project__img"
@@ -435,7 +460,7 @@
                     </a>
                     <div class="project__body">
                         <p class="project__name">«Управление персоналом»</p>
-                        <a class="project__button button button--stroke" href="#">подробнее</a>
+                        <a class="project__button button button--stroke" href="cases.html">подробнее</a>
                     </div>
                 </li><!-- / .project -->
             </ul>

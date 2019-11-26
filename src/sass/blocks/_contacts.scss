@@ -10,7 +10,7 @@
         margin-bottom: 0;
     }
 
-    .contacts--in-content & {
+    .contacts--dark & {
         margin-bottom: 29px;
 
         &:last-child {
@@ -25,17 +25,25 @@
     vertical-align: middle;
     padding-left: 41px;
     font-size: 14px;
+    font-family: "Poiret One", Tahoma, sans-serif;
     color: #fff;
 
-    .contacts--in-content & {
-        padding-left: 75px;
-        font-size: 20px;
+    .contacts--dark & {
         color: #4e4e4e;
         
         &:hover,
         &:focus {
             color: #85622e;
         }
+    }
+
+    .contacts--big & {
+        padding-left: 75px;
+        font-size: 20px;
+    }
+
+    .contacts--medium & {
+        font-size: 16px;
     }
 
     &::before {
@@ -55,9 +63,16 @@
         top: 3px;
         background-image: url("img/bg/phone.svg");
 
-        .contacts--in-content & {
-            top: 8px;
+        .contacts--dark & {
             background-image: url("img/bg/phone-darker.svg");
+        }
+
+        .contacts--medium & {
+            top: 5px;
+        }
+
+        .contacts--big & {
+            top: 8px;
         }
     }
 
@@ -65,9 +80,16 @@
         top: 4px;
         background-image: url("img/bg/email.svg");
 
-        .contacts--in-content & {
-            top: 9px;
+        .contacts--dark & {
             background-image: url("img/bg/email-darker.svg");
+        }
+
+        .contacts--medium & {
+            top: 7px;
+        }
+
+        .contacts--big & {
+            top: 9px;
         }
     }
     
@@ -75,9 +97,16 @@
         top: 4px;
         background-image: url("img/bg/marker.svg");
 
-        .contacts--in-content & {
-            top: 9px;
+        .contacts--dark & {
             background-image: url("img/bg/marker-darker.svg");
+        }
+
+        .contacts--medium & {
+            top: 6px;
+        }
+
+        .contacts--big & {
+            top: 9px;
         }
     }
     

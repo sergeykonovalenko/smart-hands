@@ -14,13 +14,15 @@
 }
 
 .project__img {
+    width: 540px;
+    height: 430px;
     object-fit: cover;
 }
 
 .project__logo-box {
     position: absolute;
     right: -45px;
-    bottom: 30px;
+    bottom: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +63,83 @@
 .project__stroke {
     position: absolute;
     top: -135px;
-    left: 235px;
+    right: -235px;
     z-index: -1;
     width: 540px;
     height: 540px;
     border: 2px solid #85622e;
+}
+
+@media screen and (max-width: 1200px) {
+    .project {
+        width: 435px;
+    }
+
+    .project__body {
+        padding-left: 30px;
+    }
+
+    .project__img {
+        width: 435px;
+        height: 346px;
+    }
+
+    .project__stroke {
+        right: -185px;
+        width: 435px;
+        height: 435px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .project {
+        width: 540px;
+    }
+
+    .project__img {
+        width: 540px;
+        height: 430px;
+    }
+
+    .project__stroke {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: 510px;
+    }
+
+    .project__img {
+        width: 510px;
+        height: 406px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .project {
+        width: 100%;
+    }
+
+    .project__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project__logo-box {
+        right: 0;
+        bottom: -30px;
+    }
+    
+    .project__body {
+        display: block;
+        padding-top: 53px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .project__name {
+        margin: 0 0 23px 0;
+    }
 }

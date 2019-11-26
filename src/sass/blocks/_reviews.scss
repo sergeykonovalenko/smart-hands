@@ -25,7 +25,7 @@
 
 .reviews__avatar-box {
     flex-shrink: 0;
-    margin-right: 95px;
+    margin-right: 70px;
 }
 
 .reviews__avatar {
@@ -64,4 +64,52 @@
 
 .reviews__text *:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews__avatar-box {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reviews__item {
+        padding-right: 15px;
+        padding-left: 30px;
+    }
+
+    .reviews__avatar-box {
+        margin-right: 30px;
+    }
+
+    .reviews__avatar {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews__item {
+        display: block;
+    }
+
+    .reviews__avatar-box {
+        margin-right: 0;
+    }
+
+    .reviews__avatar {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .reviews {
+        padding-top: 70px;
+    }
+
+    .reviews__text strong {
+        font-size: 32px;
+    }
 }

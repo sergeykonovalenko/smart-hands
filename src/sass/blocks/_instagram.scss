@@ -1,5 +1,5 @@
 .instagram {
-    padding-top: 130px;
+    padding-top: 65px;
 }
 
 .instagram__title {
@@ -84,4 +84,41 @@
     flex-shrink: 0;
     width: 425px;
     margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .instagram__box {
+        flex-wrap: wrap;
+    }
+
+    .instagram__text {
+        flex-grow: 0;
+        width: 705px;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .instagram__text {
+        width: 465px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .instagram__title {
+        text-align: center;
+    }
+
+    .instagram__box {
+        display: block;
+    }
+    
+    .instagram__head {
+        margin: 0 auto 50px;
+    }
+
+    .instagram__text {
+        width: auto;
+    }
 }

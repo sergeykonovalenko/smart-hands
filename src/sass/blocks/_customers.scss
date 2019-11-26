@@ -1,6 +1,7 @@
 .customers {
     padding-top: 65px;
     padding-bottom: 90px;
+    overflow-x: hidden;
 }
 
 .customers__title {
@@ -29,4 +30,50 @@
 
 .customers__img {
 
+}
+
+@media screen and (max-width: 1200px) {
+    .customers__title {
+        margin-bottom: 60px;
+    }
+
+    .customers__list {
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .customers__item {
+        width: 25%;
+        margin: 0;
+        padding: 0 15px;
+
+        &:nth-child(n + 5) {
+            margin-top: 30px;
+        }
+    }
+
+    .customers__img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .customers__item {
+        width: 33.3333%;
+
+        &:nth-child(n + 4) {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .customers__item {
+        width: 50%;
+
+        &:nth-child(n + 3) {
+            margin-top: 30px;
+        }
+    }
 }

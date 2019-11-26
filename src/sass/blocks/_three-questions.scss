@@ -19,6 +19,14 @@
     margin-bottom: 26px;
 }
 
+.three-questions__title-box *:first-child {
+    margin-top: 0;
+}
+
+.three-questions__title-box *:last-child {
+    margin-bottom: 0;
+}
+
 .three-questions__img {
     position: absolute;
     top: 0;
@@ -54,7 +62,7 @@
 }
 
 .three-questions-form__item {
-    margin-bottom: 31px;
+    margin-bottom: 45px;
 
     &:last-child {
         margin-bottom: 0;
@@ -62,15 +70,18 @@
 }
 
 .three-questions-form__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 22px;
-    text-align: center;
     color: #706d73;
 }
 
 .three-questions-form__title span {
-    margin-right: 30px;
+    flex-shrink: 0;
+    width: 57px;
     font-size: 46px;
     line-height: 1;
     font-family: "Poiret One", Tahoma, sans-serif;
@@ -84,4 +95,94 @@
 .three-questions-form__button {
     display: flex;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .three-questions__img {
+        width: 550px;
+    }
+
+    .three-questions-form {
+        width: 850px;
+    }
+
+    .three-questions-form__checkbox-list {
+        margin-left: 180px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .three-questions {
+        padding-top: 65px;
+    }
+
+    .three-questions .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .three-questions__head {
+        width: 640px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .three-questions__title-box {
+        padding-top: 0;
+    }
+
+    .three-questions__form-box {
+        background-color: #fff;
+    }
+    
+    .three-questions-form {
+        width: 640px;
+        margin: 0 auto;
+        padding: 40px 30px 62px;
+        box-shadow: none;
+        
+        &::after {
+            transform: translate(0, -30px);
+        }
+    }
+
+    .three-questions-form__checkbox-list {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .three-questions__head {
+        width: 510px;
+    }
+
+    .three-questions-form {
+        width: 510px;
+    }
+
+    .three-questions-form__checkbox-list {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .three-questions__head {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .three-questions-form__title span {
+        width: 47px;
+    }
+
+    .three-questions-form {
+        width: calc(100% - 30px);
+        margin: 0 15px;
+        padding-right: 17px;
+        padding-left: 30px;
+    }
+
+    .three-questions-form__checkbox-list {
+        margin-left: 20px;
+    }
 }

@@ -82,3 +82,57 @@
 .area-slider-box .slick-active button {
     background-color: #85622e;
 }
+
+@media screen and (max-width: 1200px) {
+    .area-slider-box {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .area-slider-box__arrow {
+        width: 95px;
+
+        &--next {
+            top: 123px;
+            right: 0;
+        }
+    }
+
+    .area-slider-box .slick-dots {
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .area-slider-box__arrow {
+        width: 75px;
+
+        &--next {
+            top: 78px;
+
+            &::after {
+                top: 40px;
+                left: -10px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .area-slider-box__arrow {
+        width: 55px;
+
+        &--next {
+            top: 50px;
+
+            &::after {
+                top: 51px;
+                left: -4px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 .projects {
     padding-top: 90px;
+    padding-bottom: 65px;
+    overflow-x: hidden;
 }
 
 .projects__title {
@@ -23,11 +25,15 @@
     box-shadow: 0 2px 50px rgba(9, 12, 18, .05);
 
     &:nth-child(odd) {
-        margin-top: 307px;
+        margin-top: 275px;
     }
 
     &:nth-child(even) {
         margin-right: 0;
+    }
+
+    &:nth-child(n + 4):nth-child(even) {
+        margin-top: -30px;
     }
 }
 
@@ -42,4 +48,68 @@
 
 .projects__more {
 
+}
+
+@media screen and (max-width: 1200px) {
+    .projects__title {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects__title {
+        position: static;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .projects__list {
+        display: block;
+        margin-bottom: 60px;
+        padding-top: 0;
+    }
+
+    .projects__item {
+        margin-bottom: 60px;
+
+        &:nth-child(odd),
+        &:nth-child(n + 4):nth-child(even) {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .projects__more-box {
+        position: static;
+        width: auto;
+        margin-right: 152px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects__more-box {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .projects {
+        padding-top: 0;
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .projects .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .projects__title {
+        padding: 0 15px;
+    }
 }
