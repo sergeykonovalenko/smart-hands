@@ -9,16 +9,33 @@
     margin-bottom: 36px;
     text-align: center;
 
-    &.wow {
-        visibility: hidden;
-    }
+    //&.wow {
+    //    visibility: hidden;
+    //}
 }
 
 .contacts-page__contacts {
     margin: 0 0 0 120px;
 
-    &.wow {
-        visibility: hidden;
+    //&.wow {
+    //    visibility: hidden;
+    //}
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts-page__contacts {
+        margin-left: 60px;
     }
 }
 
+@media screen and (max-width: 992px) {
+    .contacts-page__contacts {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts-page {
+        padding-top: 70px;
+    }
+}

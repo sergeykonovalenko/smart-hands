@@ -25,11 +25,55 @@
     padding: 15px;
     font-size: 20px;
     line-height: 1.55em;
+    font-family: "Poiret One", Tahoma, sans-serif;
     text-align: center;
     text-transform: uppercase;
     box-shadow: 0 2px 25px rgba(9, 12, 18, .07);
 
     &:last-child {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .for-whom__list {
+        width: 553px;
+        margin: 0 auto;
+    }
+
+    .for-whom__item {
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 33px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .for-whom__list {
+        width: auto;
+    }
+
+    .for-whom__item {
+        width: 100%;
+        min-height: 180px;
+        margin: 0 0 33px 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .for-whom {
+        padding-top: 10px;
     }
 }

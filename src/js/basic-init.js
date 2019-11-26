@@ -13,7 +13,17 @@ $(document).ready(function () {
 
     // show/hide mobile menu
     $('.main-header__hamburger').on('click', function () {
-        $('body').toggleClass('show-main-nav');
+        $('body:not(.show-internal-nav)').toggleClass('show-main-nav');
+        $('body').removeClass('show-internal-nav');
+    });
+
+    $('.internal-nav-box__subcategories').on('click', function () {
+        $('body').addClass('show-internal-nav');
+    });
+
+    $('.internal-nav .menu-item-has-children').on('click', function () {
+        $(this).toggleClass('menu-item-has-children--open');
+        $(this).find('.sub-menu').slideToggle(300);
     });
 
     // area slider

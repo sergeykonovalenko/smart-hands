@@ -6,6 +6,7 @@
 
 .program-details__title {
     margin-bottom: 30px;
+    padding: 0 30px;
     text-align: center;
 }
 
@@ -42,11 +43,16 @@
     @include reset-list;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -25px;
+    margin-right: -30px;
 }
 
 .program-details__item {
-
+    flex-grow: 1;
+    margin-top: 25px;
+    margin-right: 30px;
 }
 
 .program-details__item p:first-child {
@@ -73,4 +79,37 @@
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .program-details__box {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .program-details__box::before {
+        left: -17px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .program-details__box {
+        padding-right: 17px;
+        padding-bottom: 80px;
+
+        &::before {
+            bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .program-details__box {
+
+        &::before {
+            top: -166px;
+        }
+    }
 }

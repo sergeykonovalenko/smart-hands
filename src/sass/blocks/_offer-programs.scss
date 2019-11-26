@@ -40,9 +40,9 @@
 
 .offer-programs__text {
 
-    &.wow {
-        visibility: hidden;
-    }
+    //&.wow {
+    //    visibility: hidden;
+    //}
 }
 
 .offer-programs__text .heading-2 {
@@ -66,9 +66,64 @@
 .offer-programs__img {
     position: absolute;
     top: -100px;
-    right: -125px;
+    left: 685px;
+    width: 612px;
+    height: 429px;
+    object-fit: cover;
 
-    &.wow {
-        visibility: hidden;
+    //&.wow {
+    //    visibility: hidden;
+    //}
+}
+
+@media screen and (max-width: 1200px) {
+    .offer-programs {
+        padding-top: 40px;
+    }
+
+    .offer-programs .container {
+        flex-direction: column;
+    }
+
+    .offer-programs__img-box {
+        order: 1;
+        width: 100%;
+        margin-bottom: 110px;
+    }
+
+    .offer-programs__text-wr {
+        order: 2;
+        width: 100%;
+    }
+
+    .offer-programs__img {
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer-programs .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .offer-programs__img-box {
+        margin-bottom: 65px;
+    }
+
+    .offer-programs__img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .offer-programs__text-wr {
+
+        &::before {
+            top: -30px;
+            right: 15px;
+            bottom: 30px;
+            left: 15px;
+        }
     }
 }

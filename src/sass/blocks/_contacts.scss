@@ -120,3 +120,12 @@
         animation: .6s shake-custom;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .contacts__link {
+
+        .contacts--big & {
+            padding-left: 60px;
+        }
+    }
+}

@@ -27,3 +27,58 @@
         margin-top: 105px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .program-content__list {
+        width: 575px;
+    }
+
+    .program-content__item {
+
+        &:nth-child(3n) {
+            margin-right: 115px;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 105px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .program-content__list {
+        width: auto;
+    }
+
+    .program-content__item {
+        margin-right: 50px;
+
+        &:nth-child(3n) {
+            margin-right: 50px;
+        }
+
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .program-content__item {
+        margin-right: auto;
+        margin-left: auto;
+
+        &:nth-child(2n),
+        &:nth-child(3n) {
+            margin-right: auto;
+        }
+
+        &:nth-child(n + 2) {
+            margin-top: 50px;
+        }
+    }
+}

@@ -45,26 +45,52 @@
                     <li class="scrollto"><a href="index.html#js-reviews">Отзывы</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
+                <ul class="main-nav__contacts contacts contacts--dark contacts--medium">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--phone" href="tel:89998999999">
+                            8 999 999 - 99 - 99
+                        </a><br>
+                        <a class="contacts__link" href="tel:89871588599">8 987 158-85-99</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:info@smarthands.com">
+                            info@smarthands.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--map" href="https://goo.gl/maps/bf9Ngju6zmqBGXRy6" target="_blank">
+                            Adress, City, Street, and other information
+                        </a>
+                    </li>
+                </ul><!-- / .contacts -->
             </nav>
+            <button class="main-header__hamburger" type="button" title="Главное меню">
+                <b></b>
+                <b></b>
+                <b></b>
+            </button>
         </div>
     </header><!-- .main-header -->
 
     <section class="internal-nav-box">
         <div class="container">
-            <ul class="internal-nav-box__nav internal-nav internal-nav--row">
-                <li class="menu-item-has-children current-menu-ancestor">
-                    <a href="javascript: void(0)">Тренинги</a>
-                    <ul class="sub-menu">
-                        <li class="current-menu-item"><a href="programs.html">Управление персоналом</a></li>
-                        <li><a href="programs.html">Smart Sales</a></li>
-                        <li><a href="programs.html">Администратор Version 5.0</a></li>
-                        <li><a href="programs.html">Smart Service</a></li>
-                    </ul>
-                </li>
-                <li><a href="programs.html">Коучинг</a></li>
-                <li><a href="programs.html">Диагностика</a></li>
-                <li><a href="programs.html">Вебинар</a></li>
-            </ul><!-- / .internal-nav -->
+            <div class="internal-nav">
+                <ul class="internal-nav__list internal-nav__list--row">
+                    <li class="menu-item-has-children current-menu-ancestor">
+                        <a href="javascript: void(0)">Тренинги</a>
+                        <ul class="sub-menu">
+                            <li class="current-menu-item"><a href="programs.html">Управление персоналом</a></li>
+                            <li><a href="programs.html">Smart Sales</a></li>
+                            <li><a href="programs.html">Администратор Version 5.0</a></li>
+                            <li><a href="programs.html">Smart Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programs.html">Коучинг</a></li>
+                    <li><a href="programs.html">Диагностика</a></li>
+                    <li><a href="programs.html">Вебинар</a></li>
+                </ul>
+            </div><!-- / .internal-nav -->
+            <button class="internal-nav-box__subcategories" type="button">Программы</button>
         </div>
     </section><!-- / .internal-nav-box -->
 
@@ -80,7 +106,7 @@
                     </p>
                 </div>
             </div>
-            <picture>
+            <picture class="offer-programs__img-box">
                 <source srcset="img/base/offer-programs@1x.webp 1x, img/base/offer-programs@2x.webp 2x" type="image/webp">
                 <img class="offer-programs__img slideInRight wow"
                      src="img/base/offer-programs@1x.jpg"
@@ -118,23 +144,23 @@
             <div class="result__box">
                 <strong class="result__title heading-2 heading-2--no-uppercase fadeInDown wow">Результат</strong>
                 <ul class="result__list">
-                    <li class="result__item fadeInLeft wow" data-wow-delay="0.0s">
+                    <li class="result__item fadeInDown wow">
                         <span>1</span>
                         <p>Сформируете индивидуальную ответственность для достижения общей цели</p>
                     </li>
-                    <li class="result__item fadeInLeft wow" data-wow-delay="0.4s">
+                    <li class="result__item fadeInDown wow">
                         <span>2</span>
                         <p>Разберете типичные управленческие ошибки и пути их предотвращения</p>
                     </li>
-                    <li class="result__item fadeInLeft wow" data-wow-delay="0.8s">
+                    <li class="result__item fadeInDown wow">
                         <span>3</span>
                         <p>Научитесь правильно ставить цели перед командой для их качественного выполнения</p>
                     </li>
-                    <li class="result__item fadeInLeft wow" data-wow-delay="1.2s">
+                    <li class="result__item fadeInDown wow">
                         <span>4</span>
                         <p>Определите свой стиль руководства и научитесь взаимодействовать с другими участниками команды</p>
                     </li>
-                    <li class="result__item fadeInLeft wow" data-wow-delay="1.6s">
+                    <li class="result__item fadeInDown wow">
                         <span>5</span>
                         <p>Узнаете, как построить систему адаптации, мотивации и развития для каждого сотрудника. Овладеете методами нематериальной мотивации</p>
                     </li>
@@ -226,7 +252,7 @@
         </div>
     </section><!-- / .program-details -->
 
-    <section class="request">
+    <section class="request request--programs">
         <div class="container">
             <div class="request__head fadeInDown wow">
                 <strong class="heading-2 heading-2--no-uppercase">Оставить заявку</strong>

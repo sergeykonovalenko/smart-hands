@@ -1,4 +1,5 @@
 .tips-popup {
+    width: 880px;
     padding: 60px 70px 55px;
 }
 
@@ -18,4 +19,11 @@
 
 .tips-popup__form {
     margin: 0 auto;
+}
+
+@media screen and (max-width: 737px) {
+    .tips-popup {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }

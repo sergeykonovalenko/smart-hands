@@ -1,6 +1,5 @@
 .areas-of-work {
     padding-top: 105px;
-    overflow-x: hidden;
 }
 
 .areas-of-work__head {
@@ -24,6 +23,12 @@
     font-size: 20px;
     font-family: "Poiret One", Tahoma, sans-serif;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+    .areas-of-work {
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 576px) {

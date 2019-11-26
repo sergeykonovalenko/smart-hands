@@ -1,5 +1,6 @@
 .form {
     width: 585px;
+    max-width: 100%;
 }
 
 .form__list {
@@ -28,4 +29,10 @@
 .form__button {
     display: flex;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .form__list {
+        margin-bottom: 60px;
+    }
 }

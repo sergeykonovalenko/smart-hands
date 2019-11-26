@@ -37,3 +37,23 @@
 .request__form {
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .request .request__form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .request {
+
+        &--programs {
+            padding-top: 5px;
+            padding-bottom: 70px;
+        }
+
+        &--contacts {
+            padding-bottom: 70px;
+        }
+    }
+}
