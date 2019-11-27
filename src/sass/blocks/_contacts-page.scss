@@ -9,17 +9,17 @@
     margin-bottom: 36px;
     text-align: center;
 
-    //&.wow {
-    //    visibility: hidden;
-    //}
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 .contacts-page__contacts {
     margin: 0 0 0 120px;
 
-    //&.wow {
-    //    visibility: hidden;
-    //}
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 1200px) {

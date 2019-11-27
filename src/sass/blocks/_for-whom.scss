@@ -60,7 +60,8 @@
     .for-whom__item {
         width: 100%;
         min-height: 180px;
-        margin: 0 0 33px 0;
+        margin: 0 0 20px 0;
+        box-shadow: 0 2px 15px rgba(9, 12, 18, .07);
 
         &:last-child {
             margin-bottom: 0;

@@ -145,8 +145,8 @@ gulp.task('js-vendor', function () {
 gulp.task('serve', function () {
     server.init({
         server: 'build/',
-        online: true,
-        tunnel: 'site'
+        // online: true,
+        // tunnel: 'site'
     });
 
     gulp.watch('src/*.html', {usePolling: true}, gulp.series('html', 'refresh'));

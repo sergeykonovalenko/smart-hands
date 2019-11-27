@@ -25,10 +25,10 @@
     margin-top: 0;
     margin-bottom: 90px;
     font-weight: 400;
-    
-    //&.wow {
-    //    visibility: hidden;
-    //}
+
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 .offer-home__title span {
@@ -64,9 +64,9 @@
     padding: 68px 30px 35px 95px;
     background-color: #efece8;
     
-    //&.wow {
-    //    visibility: hidden;
-    //}
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 .offer-home__info p {

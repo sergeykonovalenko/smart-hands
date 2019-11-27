@@ -40,9 +40,9 @@
 
 .offer-programs__text {
 
-    //&.wow {
-    //    visibility: hidden;
-    //}
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 .offer-programs__text .heading-2 {
@@ -71,9 +71,9 @@
     height: 429px;
     object-fit: cover;
 
-    //&.wow {
-    //    visibility: hidden;
-    //}
+    html.js:not(.is-mobile) &.wow {
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 1200px) {

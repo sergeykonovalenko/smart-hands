@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sergeykonovalenko/smart-hands",
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
+    "autoprefixer": "^9.7.2",
     "browser-sync": "^2.26.5",
     "del": "^5.1.0",
     "gulp": "^4.0.2",

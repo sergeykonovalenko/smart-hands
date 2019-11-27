@@ -129,12 +129,20 @@
 
     .cases__content .heading-2 {
         line-height: 1.25em;
+
+        html.js:not(.is-mobile) &.wow {
+            visibility: hidden;
+        }
     }
 
     .cases__content .wp-block-embed-youtube {
         width: 780px;
         margin-right: auto;
         margin-left: auto;
+
+        html.js:not(.is-mobile) &.wow {
+            visibility: hidden;
+        }
     }
 
     .cases__content li {
