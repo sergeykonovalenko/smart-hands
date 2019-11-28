@@ -26,7 +26,7 @@
         right: -1px;
         width: 2px;
         height: 24px;
-        background-color: #85622e;
+        background-color: $color-secondary;
         transform: translate(0, -50%);
     }
 
@@ -37,18 +37,18 @@
 
 .internal-nav a {
     font-family: "Poiret One", Tahoma, sans-serif;
-    color: #212229;
+    color: $color-main;
     transition: all .15s ease-in;
 
     &:hover,
     &:focus {
-        color: #85622e;
+        color: $color-secondary;
     }
 }
 
 .internal-nav .current-menu-item a ,
 .internal-nav .current-menu-ancestor > a {
-    color: #85622e;
+    color: $color-secondary;
 }
 
 .internal-nav__list--row > li > a {
@@ -137,7 +137,7 @@
         margin-left: 21px;
         border-width: 0 2px 2px 0;
         border-style: solid;
-        border-color: #85622e;
+        border-color: $color-secondary;
         cursor: pointer;
         transform: rotate(-45deg);
     }
@@ -265,7 +265,7 @@
             margin-left: 10px;
             border-width: 0 1px 1px 0;
             border-style: solid;
-            border-color: #85622e;
+            border-color: $color-secondary;
             cursor: pointer;
             transition: all .3s linear;
             transform: rotate(-45deg);

@@ -35,7 +35,7 @@
         background-position: top center;
         background-size: contain;
         background-origin: content-box;
-        border: 2px solid #85622e;
+        border: 2px solid $color-secondary;
     }
 
     &:nth-child(1)::before {
@@ -58,7 +58,7 @@
         left: 50%;
         width: 19px;
         height: 2px;
-        background-color: #85622e;
+        background-color: $color-secondary;
         transform: translate(-50%, 0);
     }
 }

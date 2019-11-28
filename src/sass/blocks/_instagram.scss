@@ -55,7 +55,6 @@
     margin-bottom: 34px;
     font-style: normal;
     text-align: right;
-    color: #635848;
 }
 
 .instagram__text p {
@@ -63,12 +62,12 @@
 }
 
 .instagram__text a {
-    color: #4e4e4e;
+    color: $color-main;
     transition: all .15s ease-in;
     
     &:hover,
     &:focus {
-        color: #85622e;
+        color: $color-secondary;
     }
 }
 

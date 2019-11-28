@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Montserrat", Tahoma, sans-serif;
-    color: #696969;
+    color: $color-main;
     word-wrap: break-word;
     background-color: #fff;
 }
@@ -49,12 +49,12 @@ textarea {
     font-style: italic;
     font-weight: 300;
     font-size: 14px;
-    color: #696969;
+    color: $color-main;
     background-color: transparent;
     border-width: 0 0 1px 0;
     border-style: solid;
     border-radius: 0;
-    border-color: #85622e;
+    border-color: $color-secondary;
 
     &:hover,
     &:focus {
@@ -68,7 +68,7 @@ textarea {
 
 input.error,
 textarea.error {
-    border-color: #fb5258 !important;
+    border-color: $color-warning !important;
 }
 
 ::placeholder {

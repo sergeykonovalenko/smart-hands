@@ -40,12 +40,10 @@
         margin-bottom: 16px;
         font-size: 80px;
         line-height: 1.25em;
-        color: #606060;
     }
 
     &:last-child {
         font-size: 32px;
-        color: #2e2e2e;
     }
 }
 
@@ -76,7 +74,7 @@
     line-height: 2.05em;
     font-family: "Poiret One", Tahoma, sans-serif;
     text-transform: uppercase;
-    color: #4e4e4e;
+    color: #000;
 }
 
 @media screen and (max-width: 1200px) {

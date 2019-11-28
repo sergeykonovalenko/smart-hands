@@ -32,7 +32,7 @@
             background-color: transparent;
             border-width: 0 5px 5px 0;
             border-style: solid;
-            border-color: #85622e;
+            border-color: $color-secondary;
             cursor: pointer;
             transform: rotate(-45deg);
         }
@@ -80,7 +80,7 @@
 }
 
 .area-slider-box .slick-active button {
-    background-color: #85622e;
+    background-color: $color-secondary;
 }
 
 @media screen and (max-width: 1200px) {

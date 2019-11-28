@@ -29,11 +29,11 @@
     color: #fff;
 
     .contacts--dark & {
-        color: #4e4e4e;
+        color: $color-main;
         
         &:hover,
         &:focus {
-            color: #85622e;
+            color: $color-secondary;
         }
     }
 

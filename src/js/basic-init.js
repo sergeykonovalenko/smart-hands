@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     // init popup
     $('.three-questions-form__button').fancybox({
-        src  : '#js-tips-popup',
+        src  : '.tips-popup',
         type : 'inline',
         touch : false,
         backFocus : false,
@@ -69,6 +69,7 @@ $(document).ready(function () {
                `
         }
     });
+
 
     ////////////////////////////////////////////////////////////////////////////
     // FORM PROCESSING
@@ -115,11 +116,11 @@ $(document).ready(function () {
                 }
             },
             submitHandler: function (form) {
-                $('.modal-order').modal('hide');
+                $.fancybox.close();
                 $('.loader').fadeIn();
 
                 $.ajax({
-                    url: templateUrl + '/tpl-sys-request.php',
+                    url: '',
                     type: 'POST',
                     data: new FormData(form),
                     processData: false,
@@ -130,8 +131,12 @@ $(document).ready(function () {
                             $('.loader').fadeOut();
                         },800);
                         setTimeout(function () {
-                            $('.modal-thanks').modal('show');
-                            $( '.order__field' ).val('');
+                            $.fancybox.open({
+                                src  : '.modal-thanks',
+                                type : 'inline',
+                                touch : false,
+                                backFocus : false
+                            });
                         },1100);
                     });
 

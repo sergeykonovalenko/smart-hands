@@ -36,7 +36,7 @@
     font-size: 90px;
     line-height: 1;
     font-family: "Poiret One", Tahoma, sans-serif;
-    color: #85622e;
+    color: $color-secondary;
 
     &::after {
         content: "";
@@ -46,7 +46,7 @@
         height: 16px;
         border-width: 0 2px 2px 0;
         border-style: solid;
-        border-color: #85622e;
+        border-color: $color-secondary;
         transform: rotate(-45deg);
     }
 
@@ -74,7 +74,7 @@
     font-size: 27px;
     font-family: "Poiret One", Tahoma, sans-serif;
     text-transform: uppercase;
-    color: #4e4e4e;
+    color: $color-main;
 }
 
 .steps-to-success__text p {
@@ -177,7 +177,7 @@
             margin: 18px auto 0;
             border-width: 0 2px 2px 0;
             border-style: solid;
-            border-color: #85622e;
+            border-color: $color-secondary;
             transform: rotate(45deg);
 
             .steps-to-success__item:last-child & {

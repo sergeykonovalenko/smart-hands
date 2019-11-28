@@ -6,7 +6,7 @@
     font-family: "Poiret One", Tahoma, sans-serif;
     text-transform: uppercase;
     vertical-align: middle;
-    color: #4e4e4e;
+    color: $color-main;
     cursor: pointer;
     transition: all .15s ease-in;
 
@@ -18,12 +18,12 @@
         margin-left: 25px;
         border-width: 0 2px 2px 0;
         border-style: solid;
-        border-color: #85622e;
+        border-color: $color-secondary;
         transform: rotate(-45deg);
     }
 
     &:hover,
     &:focus {
-        color: #85622e;
+        color: $color-secondary;
     }
 }

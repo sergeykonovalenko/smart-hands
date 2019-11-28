@@ -22,7 +22,7 @@
         right: 0;
         left: -34px;
         bottom: 52px;
-        border: 2px solid #85622e;
+        border: 2px solid $color-secondary;
         pointer-events: none;
     }
 
@@ -59,14 +59,13 @@
     display: block;
     font-size: 55px;
     font-family: "Poiret One", Tahoma, sans-serif;
-    color: #85622e;
+    color: $color-secondary;
 }
 
 .progress__text {
     margin: 0;
     font-weight: 300;
     line-height: 1.4375em;
-    color: #635848;
 }
 
 @media screen and (max-width: 992px) {

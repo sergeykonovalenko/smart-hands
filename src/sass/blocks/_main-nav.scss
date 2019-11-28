@@ -1,7 +1,7 @@
 .main-nav {
 
     &--internal {
-        border-bottom: 2px solid #85622e;
+        border-bottom: 2px solid $color-secondary;
     }
 }
 
@@ -20,14 +20,13 @@
     padding: 26px 32px 32px;
     font-size: 24px;
     font-family: "Poiret One", Tahoma, sans-serif;
-    color: #212229;
+    color: $color-main;
     cursor: pointer;
     transition: all .15s ease-in;
 
-
     &:hover,
     &:focus {
-        color: #85622e;
+        color: $color-secondary;
     }
 }
 
@@ -101,7 +100,7 @@
     }
 
     .main-nav--internal .main-nav__menu .current-menu-item a {
-        color: #85622e;
+        color: $color-secondary;
         background-color: transparent;
     }
 

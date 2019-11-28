@@ -28,12 +28,12 @@
         padding: 14px 43px 22px;
         font-size: 24px;
         font-family: "Poiret One", Tahoma, sans-serif;
-        color: #85622e;
+        color: $color-secondary;
         background-color: transparent;
-        border: 2px solid #85622e;
+        border: 2px solid $color-secondary;
 
         &::after {
-            background-color: #85622e;
+            background-color: $color-secondary;
         }
 
         &:hover,
@@ -47,11 +47,11 @@
         padding: 20px 34px;
         font-size: 16px;
         color: #fff;
-        background-color: #85622e;
+        background-color: $color-secondary;
         border: none;
 
         &::after {
-            background-color: #a47b40;
+            background-color: $color-secondary--light;
         }
     }
 
