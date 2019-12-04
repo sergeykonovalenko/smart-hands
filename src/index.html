@@ -74,7 +74,7 @@
 
     <section class="offer-home">
         <div class="container">
-            <h1 class="offer-home__title zoomIn wow">
+            <h1 class="offer-home__title">
                 <span>Smart Hands</span>
                 <span>Студия командного коучинга</span>
             </h1>
@@ -82,9 +82,10 @@
                 <source srcset="img/base/offer-home@1x.webp 1x, img/base/offer-home@2x.webp 2x" type="image/webp">
                 <img class="offer-home__img" src="img/base/offer-home@1x.png" srcset="img/base/offer-home@2x.png 2x" width="584" height="810" alt="">
             </picture>
-            <div class="offer-home__info slideInRight wow">
+            <div class="offer-home__info">
                 <p>Обучение для салонов красоты, медицинских центров, отелей<br> и фитнес клубов</p>
             </div>
+            <span class="offer-home__say-hello"></span>
         </div>
     </section><!-- / .offer-home -->
 
@@ -99,13 +100,15 @@
         <div class="area-slider-box fadeInUp wow">
             <div class="slide-area">
                 <div class="slide-area__box">
-                    <picture>
-                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
-                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
-                    </picture>
+                    <a class="slide-area__img-link" href="#">
+                        <picture>
+                            <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                            <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                        </picture>
+                    </a>
                     <div class="slide-area__text">
-                        <strong class="heading-2 pulse">Тренинги</strong>
-                        <strong class="heading-3">Освоение и обработка инстументов</strong>
+                        <strong class="heading-2">Тренинги</strong>
+                        <strong class="heading-3">Освоение и обработка инструментов</strong>
                         <p>
                             Салон не приносит желаемой прибыли, финансовые показатели не устраивают.
                             На тренинге мы разбираем причины и даем инструменты выхода на желаемые показатели.
@@ -117,10 +120,12 @@
             </div><!-- / .slide-area -->
             <div class="slide-area">
                 <div class="slide-area__box">
-                    <picture>
-                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
-                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
-                    </picture>
+                    <a class="slide-area__img-link" href="#">
+                        <picture>
+                            <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                            <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                        </picture>
+                    </a>
                     <div class="slide-area__text">
                         <strong class="heading-2">Коучинг</strong>
                         <strong class="heading-3">Повышение вовлеченности сотрудников в работу</strong>
@@ -136,10 +141,12 @@
             </div><!-- / .slide-area -->
             <div class="slide-area">
                 <div class="slide-area__box">
-                    <picture>
-                        <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
-                        <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
-                    </picture>
+                    <a class="slide-area__img-link" href="#">
+                        <picture>
+                            <source srcset="img/base/direction-slider-img-1@1x.webp 1x, img/base/direction-slider-img-1@2x.webp 2x" type="image/webp">
+                            <img class="slide-area__img" src="img/base/direction-slider-img-1@1x.jpg" srcset="img/base/direction-slider-img-1@2x.jpg 2x" alt="">
+                        </picture>
+                    </a>
                     <div class="slide-area__text">
                         <strong class="heading-2">Диагностика</strong>
                         <strong class="heading-3">Выявление сильных сторон и зон развития</strong>
@@ -230,11 +237,11 @@
                             <p class="three-questions-form__title"><span>1</span> Какой вид программы вас интересует?</p>
                             <ul class="three-questions-form__checkbox-list checkbox-list">
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-individual" type="checkbox" name="individual">
+                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-individual" type="checkbox" name="individual" value="Индивидуальная">
                                     <label class="checkbox-list__label" for="three-questions-form-individual">Индивидуальная</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-team" type="checkbox" name="team">
+                                    <input class="checkbox-list__field visually-hidden" id="three-questions-form-team" type="checkbox" name="team" value="Командная">
                                     <label class="checkbox-list__label" for="three-questions-form-team">Командная</label>
                                 </li>
                             </ul><!-- / .checkbox-list -->
@@ -243,11 +250,11 @@
                             <p class="three-questions-form__title"><span>2</span> Какой формат работы вам более удобен?</p>
                             <ul class="three-questions-form__checkbox-list checkbox-list">
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-offline" type="checkbox" name="type-of-work-offline">
+                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-offline" type="checkbox" name="type-of-work-offline" value="Личная работа в режиме офлайн">
                                     <label class="checkbox-list__label" for="type-of-work-offline">Личная работа в режиме офлайн</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-online" type="checkbox" name="type-of-work-online">
+                                    <input class="checkbox-list__field visually-hidden" id="type-of-work-online" type="checkbox" name="type-of-work-online" value="Удаленная работа в режиме онлайн">
                                     <label class="checkbox-list__label" for="type-of-work-online">Удаленная работа в режиме онлайн</label>
                                 </li>
                             </ul><!-- / .checkbox-list -->
@@ -256,27 +263,27 @@
                             <p class="three-questions-form__title"><span>3</span> Какова основная цель нашей совместной работы?</p>
                             <ul class="three-questions-form__checkbox-list checkbox-list">
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="sales-boost" type="checkbox" name="sales-boost">
+                                    <input class="checkbox-list__field visually-hidden" id="sales-boost" type="checkbox" name="sales-boost" value="Повышение продаж">
                                     <label class="checkbox-list__label" for="sales-boost">Повышение продаж</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="team-transformation" type="checkbox" name="team-transformation">
+                                    <input class="checkbox-list__field visually-hidden" id="team-transformation" type="checkbox" name="team-transformation" value="Трансформация команды">
                                     <label class="checkbox-list__label" for="team-transformation">Трансформация команды</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="efficient-work-environment" type="checkbox" name="efficient-work-environment">
+                                    <input class="checkbox-list__field visually-hidden" id="efficient-work-environment" type="checkbox" name="efficient-work-environment" value="Создание эффективной рабочей среды">
                                     <label class="checkbox-list__label" for="efficient-work-environment">Создание эффективной рабочей среды</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="service-level-improvement" type="checkbox" name="service-level-improvement">
+                                    <input class="checkbox-list__field visually-hidden" id="service-level-improvement" type="checkbox" name="service-level-improvement" value="Повышение уровня сервиса">
                                     <label class="checkbox-list__label" for="service-level-improvement">Повышение уровня сервиса</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="achieving-new-results" type="checkbox" name="achieving-new-results">
+                                    <input class="checkbox-list__field visually-hidden" id="achieving-new-results" type="checkbox" name="achieving-new-results" value="Достижение новых результатов">
                                     <label class="checkbox-list__label" for="achieving-new-results">Достижение новых результатов</label>
                                 </li>
                                 <li class="checkbox-list__item">
-                                    <input class="checkbox-list__field visually-hidden" id="increase-customer-flow" type="checkbox" name="increase-customer-flow">
+                                    <input class="checkbox-list__field visually-hidden" id="increase-customer-flow" type="checkbox" name="increase-customer-flow" value="Увеличение потока клиентов">
                                     <label class="checkbox-list__label" for="increase-customer-flow">Увеличение потока клиентов</label>
                                 </li>
                             </ul><!-- / .checkbox-list -->
@@ -502,24 +509,36 @@
                     <p>Всего вам самого красивого</p>
                 </div>
                 <ul class="instagram__gallery gallery-instagram">
-                    <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-1.jpg" width="200" height="200" alt="">
+                    <!--<li class="gallery-instagram__item">
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-1.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-1.jpg" width="200" height="200" alt="">
+                        </a>
                     </li>
                     <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-2.jpg" width="200" height="200" alt="">
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-2.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-2.jpg" width="200" height="200" alt="">
+                        </a>
                     </li>
                     <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-3.jpg" width="200" height="200" alt="">
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-3.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-3.jpg" width="200" height="200" alt="">
+                        </a>
                     </li>
                     <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-4.jpg" width="200" height="200" alt="">
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-4.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-4.jpg" width="200" height="200" alt="">
+                        </a>
                     </li>
                     <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-5.jpg" width="200" height="200" alt="">
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-5.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-5.jpg" width="200" height="200" alt="">
+                        </a>
                     </li>
                     <li class="gallery-instagram__item">
-                        <img class="gallery-instagram__img" src="img/base/instagram-post-6.jpg" width="200" height="200" alt="">
-                    </li>
+                        <a class="gallery-instagram__link" href="img/base/instagram-post-6.jpg" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="img/base/instagram-post-6.jpg" width="200" height="200" alt="">
+                        </a>
+                    </li>-->
                 </ul><!-- / .gallery-instagram -->
             </div>
         </div>
@@ -781,11 +800,26 @@
 
     <!-- Tips Popup -->
     <div class="tips-popup modal-common" id="js-tips-popup">
-        <p class="tips-popup__title">
-            Узнайте как создать <strong>стабильный поток клиентов.</strong><br>
-            Получите рекомендации экспертов прямо сейчас.
-        </p>
+        <div class="tips-popup__head">
+            <p>
+                Узнайте как создать <strong>стабильный поток клиентов.</strong><br>
+                Получите рекомендации экспертов прямо сейчас.
+            </p>
+        </div>
         <form class="tips-popup__form form js-form" action="#" method="post">
+            <input type="hidden" name="form-type" value="three-questions-form">
+
+            <input type="hidden" name="individual">
+            <input type="hidden" name="team">
+            <input type="hidden" name="type-of-work-offline">
+            <input type="hidden" name="type-of-work-online">
+            <input type="hidden" name="sales-boost">
+            <input type="hidden" name="team-transformation">
+            <input type="hidden" name="efficient-work-environment">
+            <input type="hidden" name="service-level-improvement">
+            <input type="hidden" name="achieving-new-results">
+            <input type="hidden" name="increase-customer-flow">
+
             <ul class="form__list">
                 <li class="form__item">
                     <label class="form__label" for="form-name">Ваше имя</label>
@@ -818,8 +852,14 @@
         </div>
     </div><!-- / .modal-thanks -->
 
+    <script>
+        let templateUrl = 'http://www.smarthands.online/wp-content/themes/smart-hands';
+    </script>
+
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Typed -->
+    <script src="js/typed.js"></script>
     <!-- jQuery mb.browser -->
     <script src="js/jquery.mb.browser.js"></script>
     <!-- Slick Slider -->

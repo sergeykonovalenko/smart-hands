@@ -11,6 +11,7 @@
     @include reset-list;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
 }
@@ -30,19 +31,50 @@
     text-transform: uppercase;
     box-shadow: 0 2px 25px rgba(9, 12, 18, .07);
 
+    &:nth-child(4n),
     &:last-child {
         margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+        margin-top: 33px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .for-whom__list {
-        width: 553px;
+        width: 846px;
         margin: 0 auto;
     }
 
     .for-whom__item {
-        &:nth-child(2n) {
+        &:nth-child(4n) {
+            margin-right: 33px;
+        }
+
+        &:nth-child(3n),
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 4) {
+            margin-top: 33px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .for-whom__list {
+        width: 553px;
+    }
+
+    .for-whom__item {
+        &:nth-child(3n) {
+            margin-right: 33px;
+        }
+
+        &:nth-child(2n),
+        &:last-child {
             margin-right: 0;
         }
 
@@ -62,6 +94,10 @@
         min-height: 180px;
         margin: 0 0 20px 0;
         box-shadow: 0 2px 15px rgba(9, 12, 18, .07);
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-bottom: 0;

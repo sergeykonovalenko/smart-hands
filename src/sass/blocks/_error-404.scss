@@ -1,0 +1,27 @@
+.error-404 {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.error-404__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1.25em;
+    font-family: "Poiret One", Tahoma, sans-serif;
+}
+
+.error-404__subtitle {
+    margin: 0;
+}
+
+.error-404__subtitle a {
+    color: $color-secondary;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary--light;
+    }
+}

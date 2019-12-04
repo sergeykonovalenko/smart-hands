@@ -58,7 +58,7 @@
 }
 
 .cases__content p {
-    margin: 0;
+    margin: 16px 0;
 }
 
 .cases__content ul {
@@ -81,6 +81,10 @@
     box-shadow: 0 2px 25px rgba(9, 12, 18, .07);
 
     &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:last-child {
         margin-right: 0;
     }
 

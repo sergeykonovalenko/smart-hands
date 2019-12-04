@@ -1,6 +1,7 @@
 /*
 Theme Name: Smart Hands
 Author: Sergey Konovalenko
+Version: 1.0
 */
 
 
@@ -38,6 +39,7 @@ Author: Sergey Konovalenko
    ========================================================================== */
 @import "blocks/main-header";
 @import "blocks/main-nav";
+@import "blocks/only-on-internal-pages";
 @import "blocks/show-main-nav";
 
 /* Offer home
@@ -157,6 +159,15 @@ Author: Sergey Konovalenko
    ========================================================================== */
 @import "blocks/contacts-page";
 
+/* ==========================================================================
+   THE MAIN TEMPLATE FILE
+   ========================================================================== */
+@import "blocks/site-content";
+
+/* ==========================================================================
+   ERROR 404
+   ========================================================================== */
+@import "blocks/error-404";
 
 
 /* Loader
@@ -166,3 +177,5 @@ Author: Sergey Konovalenko
 /* Modal thanks
    ========================================================================== */
 @import "blocks/modal-thanks";
+
+

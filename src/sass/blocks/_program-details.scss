@@ -63,7 +63,8 @@
     text-transform: uppercase;
 }
 
-.program-details__item span {
+.program-details__item strong {
+    font-weight: 400;
     font-size: 55px;
     line-height: 1;
     color: $color-secondary;

@@ -1,6 +1,17 @@
 $(document).ready(function () {
     'use strict';
 
+    // SAY HELLO animation
+    if ( $('.offer-home__say-hello').length && window.innerWidth > 992 ) {
+        let typed = new Typed(".offer-home__say-hello", {
+            strings: ['Say<br> Hello'],
+            typeSpeed: 70,
+            startDelay: 0,
+            backSpeed: 30,
+            showCursor: false,
+        });
+    }
+
     // WOW
     let wow = new WOW(
         {
@@ -25,9 +36,41 @@ $(document).ready(function () {
         $('body').addClass('show-internal-nav');
     });
 
-    $('.internal-nav .menu-item-has-children').on('click', function () {
-        $(this).toggleClass('menu-item-has-children--open');
-        $(this).find('.sub-menu').slideToggle(300);
+    if (is_mobile) {
+        $('.internal-nav .menu-item-has-children').on('click', function () {
+            $(this).toggleClass('menu-item-has-children--open');
+            $(this).find('.sub-menu').slideToggle(300);
+        });
+    }
+
+    // Instagram post output
+    let tok = '7935439629.1677ed0.48bce5c9f2b84c1c9a085aa9dc7f2b60',
+        userid = 7935439629,
+        quantity = 6;
+
+    $.ajax({
+        url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
+        dataType: 'jsonp',
+        type: 'GET',
+        data: {access_token: tok, count: quantity},
+        success: function(result){
+            console.log(result);
+            for( let x in result.data ) {
+                $('ul.gallery-instagram').append(`
+                    <li class="gallery-instagram__item">
+                        <a class="gallery-instagram__link" href="${result.data[x].images.standard_resolution.url}" data-fancybox="instagram">
+                            <img class="gallery-instagram__img" src="${result.data[x].images.low_resolution.url}" width="200" height="200" alt="">
+                        </a>
+                    </li>`);
+                // result.data[x].images.thumbnail.url - URL картинки 150х150
+                // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 320х320
+                // result.data[x].images.standard_resolution.url - URL картинки 640х640
+                // result.data[x].link - URL страницы данного поста в Инстаграм
+            }
+        },
+        error: function(result){
+            console.log(result);
+        }
     });
 
     // area slider
@@ -55,6 +98,11 @@ $(document).ready(function () {
     });
 
     // init popup
+    $('[data-fancybox="instagram"]').fancybox({
+        touch : false,
+        backFocus : false,
+    });
+
     $('.three-questions-form__button').fancybox({
         src  : '.tips-popup',
         type : 'inline',
@@ -70,6 +118,21 @@ $(document).ready(function () {
         }
     });
 
+    // Transferring data from "Answer to three questions" in the form
+    let threeQuestionsFormButton = document.querySelector('.three-questions-form__button');
+    let threeQuestionsForm = document.querySelector('.three-questions-form');
+    let threeQuestionsFormFields = threeQuestionsForm.querySelectorAll('.checkbox-list__field');
+    let tipsPopupForm = document.querySelector('.tips-popup__form');
+
+    threeQuestionsFormButton.addEventListener('click', function () {
+        threeQuestionsFormFields.forEach(function (item, index, array) {
+
+            let name = item.getAttribute('name');
+            let targetField = tipsPopupForm.querySelector(`input[name="${name}"]`);
+
+            targetField.value = item.checked ? item.value : '';
+        });
+    });
 
     ////////////////////////////////////////////////////////////////////////////
     // FORM PROCESSING
@@ -120,25 +183,31 @@ $(document).ready(function () {
                 $('.loader').fadeIn();
 
                 $.ajax({
-                    url: '',
+                    url: `${templateUrl}/tpl-sys-request.php`,
                     type: 'POST',
                     data: new FormData(form),
                     processData: false,
                     contentType: false,
-                })
-                    .always(function (response) {
+                    beforeSend: function(){
+
+                    },
+                    success: function (data) {
                         setTimeout(function () {
                             $('.loader').fadeOut();
                         },800);
+
                         setTimeout(function () {
                             $.fancybox.open({
-                                src  : '.modal-thanks',
-                                type : 'inline',
-                                touch : false,
-                                backFocus : false
+                                src: '.modal-thanks',
+                                type: 'inline',
+                                touch: false,
+                                backFocus: false
                             });
                         },1100);
-                    });
+
+                        jQuery(form).find(".form__field").each(function(){ jQuery(this).val(''); });
+                    }
+                });
 
                 return false;
             }

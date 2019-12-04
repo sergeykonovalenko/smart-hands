@@ -64,3 +64,180 @@
         transform: rotate(0);
     }
 }
+
+/* Brown element
+   ========================================================================== */
+@keyframes brown-element {
+    0% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 1170px)/-2);
+        animation-timing-function: linear;
+    }
+    60% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 1170px)/-2);
+        animation-timing-function: linear;
+    }
+    61% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 1170px)/-2);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: 1;
+        left: 630px;
+        right: 15px;
+    }
+}
+
+@keyframes brown-element-large {
+    0% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 960px)/-2);
+        animation-timing-function: linear;
+    }
+    60% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 960px)/-2);
+        animation-timing-function: linear;
+    }
+    61% {
+        opacity: 1;
+        left: 0;
+        right: calc((120vw - 960px)/-2);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: 1;
+        left: 420px;
+        right: 15px;
+    }
+}
+
+/* Fade-in offer title
+   ========================================================================== */
+@keyframes fade-in-offer-title {
+    0% {
+        opacity: 0;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    68% {
+        opacity: 0;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+    }
+}
+
+/* Slide in right offer info
+   ========================================================================== */
+@keyframes slide-in-right-offer-info {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: ease-in-out;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(calc(100% + (120vw - 1140px)/2)) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: ease-in-out;
+    }
+    48% {
+        opacity: 1;
+        transform: translateX(calc(100% + (120vw - 1140px)/2)) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes slide-in-right-offer-info-large {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: ease-in-out;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(calc(100% + (120vw - 930px)/2)) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: ease-in-out;
+    }
+    48% {
+        opacity: 1;
+        transform: translateX(calc(100% + (120vw - 930px)/2)) translateY(0px) rotate(0deg) scale(1, 1);
+        animation-timing-function: linear;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1);
+    }
+}
+
+/* Fade in say hello
+   ========================================================================== */
+@keyframes fade-in-say-hello {
+    0% {
+        opacity: 0;
+        transform: translateX(0px) translateY(0px);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(250px) translateY(0px);
+        animation-timing-function: ease-in-out;
+    }
+    39% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px);
+        animation-timing-function: ease-in-out;
+    }
+    77% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+/* Change navigation color
+   ========================================================================== */
+@keyframes change-navigation-color {
+    0% {
+        color: #fff;
+        animation-timing-function: linear;
+    }
+    1% {
+        color: #fff;
+        animation-timing-function: ease-in-out;
+    }
+    39% {
+        color: #fff;
+        animation-timing-function: ease-in-out;
+    }
+    77% {
+        color: #fff;
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        color: $color-main;
+    }
+}

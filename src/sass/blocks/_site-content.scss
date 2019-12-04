@@ -1,0 +1,16 @@
+.site-content {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.site-content h1 {
+    text-align: center;
+}
+
+.site-content article *:first-child {
+    margin-top: 0;
+}
+
+.site-content article *:last-child {
+    margin-bottom: 0;
+}

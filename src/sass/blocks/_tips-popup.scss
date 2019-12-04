@@ -3,15 +3,26 @@
     padding: 60px 70px 55px;
 }
 
-.tips-popup__title {
-    margin-top: 0;
+.tips-popup__head {
     margin-bottom: 55px;
-    font-size: 18px;
-    line-height: 1.7222em;
     text-align: center;
 }
 
-.tips-popup__title strong {
+.tips-popup__head p {
+    margin: 16px 0;
+    font-size: 18px;
+    line-height: 1.7222em;
+}
+
+.tips-popup__head *:first-child {
+    margin-top: 0;
+}
+
+.tips-popup__head *:last-child {
+    margin-bottom: 0;
+}
+
+.tips-popup__head strong {
     font-weight: 600;
     font-size: 24px;
     color: $color-secondary;
